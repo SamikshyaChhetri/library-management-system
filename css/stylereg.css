@@ -1,0 +1,69 @@
+* {
+  background-color: rgb(255, 255, 255);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px 1px;
+  margin: 9px 0px;
+  border: none;
+}
+.wrap {
+  margin: 1em;
+  border-radius: 20px;
+}
+.email {
+  text-align: left;
+}
+.container {
+  width: fit-content;
+  margin: 5em 0em 0em 25em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+p {
+  text-align: center;
+  padding: 1em 0em 1em 0em;
+  font-size: 30px;
+}
+button {
+  background-color: #04aa6d;
+  text-align: center;
+  margin: 1em 1em;
+  padding: 10px 5px;
+  color: white;
+  width: 100%;
+  border: none;
+  font-size: 15px;
+}
+button:hover {
+  background-color: #00905b;
+  cursor: pointer;
+}
+.space {
+  border-bottom: 1px solid black;
+  margin: 1em 3em;
+}
+.fb {
+  text-align: center;
+  margin: 1em 1em;
+  background-color: #1877f2;
+  padding: 10px 5px;
+  color: white;
+}
+.fb:hover {
+  background-color: #0060de;
+  cursor: pointer;
+}
+.google {
+  text-align: center;
+  margin: 1em 1em;
+  padding: 10px 5px;
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+.google:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
