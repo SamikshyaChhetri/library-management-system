@@ -10,6 +10,7 @@ p {
 }
 .form {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 2em;
 }
 input[type="text"],
 input[type="password"] {
@@ -20,19 +21,20 @@ input[type="password"] {
 }
 
 .cont {
-  border-color: rgb(147, 135, 135);
-  background-image: linear-gradient(rgb(255, 237, 237), rgb(159, 159, 159));
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 150px;
   margin-left: 500px;
   border-radius: 20px;
   padding-bottom: 40px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 .rem {
   display: flex;
   justify-content: space-between;
+  margin-top: 2em;
 }
 .me {
   cursor: pointer;
@@ -48,7 +50,7 @@ button {
   color: white;
   padding: 10px 20px;
   /* margin: 9px; */
-  margin-top: 9px;
+  margin-top: 2em;
   border: none;
   width: 100%;
 }
@@ -93,106 +95,7 @@ button:hover {
   position: relative;
 }
 i {
-  padding-top: 17px;
+  padding-top: 22px;
   position: absolute;
   left: 270px;
-}
-@media only screen and (max-width: 700px) {
-  .log {
-    font-size: 5px;
-  }
-  .form {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 8px;
-  }
-  p {
-    font-size: 7px;
-    padding-top: 10px;
-  }
-  input[type="text"],
-  input[type="password"] {
-    width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    box-sizing: border-box;
-    border: none;
-    font-size: 7px;
-  }
-
-  .cont {
-    border-color: rgb(147, 135, 135);
-    background-image: linear-gradient(rgb(120, 167, 234), rgb(120, 217, 232));
-    margin-top: 50px;
-    margin-left: 100px;
-    border-radius: 10px;
-  }
-  .rem {
-    display: flex;
-    justify-content: space-between;
-  }
-  .me {
-    cursor: pointer;
-    font-size: 5px;
-  }
-  .for {
-    font-size: 5px;
-    padding-left: 10px;
-    font-family: "Times New Roman", Times, serif;
-    padding-top: 10px;
-    color: rgb(15, 98, 193);
-  }
-  button {
-    background-color: #04aa6d;
-    color: white;
-    padding: 1px 5px;
-    /* margin: 9px; */
-    margin-top: 3px;
-    border: none;
-    width: 100%;
-  }
-  button:hover {
-    background-color: #027e50;
-    cursor: pointer;
-  }
-  .submit {
-    font-size: 10px;
-  }
-  .acc {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4px;
-  }
-  .dont {
-    padding-top: 10px;
-  }
-  .reg {
-    padding-right: 10px;
-    color: rgb(15, 98, 193);
-    padding-top: 10px;
-  }
-  .reg:hover,
-  .for:hover {
-    color: rgb(240, 19, 19);
-    cursor: pointer;
-  }
-  .new {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .eye {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-  }
-  i {
-    padding-top: 14px;
-    position: absolute;
-    left: 130px;
-    align-items: center;
-    font-size: 7px;
-  }
 }
