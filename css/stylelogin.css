@@ -4,14 +4,17 @@ p {
   padding-top: 20px;
   text-align: center;
 }
+
 .log {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
 }
+
 .form {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 2em;
 }
+
 input[type="text"],
 input[type="password"] {
   width: 100%;
