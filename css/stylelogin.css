@@ -19,7 +19,6 @@ input[type="password"] {
   margin: 9px 0px;
   border: none;
 }
-
 .cont {
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -29,7 +28,6 @@ input[type="password"] {
   margin-left: 500px;
   border-radius: 20px;
   padding-bottom: 40px;
-  /* padding-top: 20px; */
 }
 .rem {
   display: flex;
