@@ -5,9 +5,9 @@ eyeIcon.addEventListener("click", () => {
   console.log("eyesss");
   if (inputBox.type === "password") {
     inputBox.type = "text";
-    eyeIcon.classlist.replace("fa-slash-eye", "fa-eye");
+    eyeIcon.classlist.replace("fa-eye-slash", "fa-eye");
   } else {
     inputBox.type = "password";
-    eyeIcon.classList.replace("fa-eye", "fa-slash-eye");
+    eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
