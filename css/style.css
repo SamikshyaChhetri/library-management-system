@@ -36,6 +36,7 @@ img {
   font-size: larger;
   padding: 12px;
   border-radius: 10px;
+  color: black;
 }
 .nav a:hover,
 .log a:hover {
@@ -57,13 +58,16 @@ img {
 }
 
 span {
-  background-color: rgb(246, 57, 57);
-  padding: 5px;
+  background-color: blueviolet;
+  color: white;
+
+  padding: 8px;
   border-radius: 10px;
 }
-.abt {
+#home {
   font-size: 15px;
-  width: 50%;
+  /* width: 50%; */
   font-weight: lighter;
   text-align: center;
+  color: rgba(0, 0, 0, 0.696);
 }
