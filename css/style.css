@@ -105,14 +105,10 @@ span {
   justify-content: center;
   padding-bottom: 2em;
 }
-.abc {
-  margin-top: 2em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-}
+
 .hehe {
   height: 18em;
-  width: 19em;
+  width: 18em;
   border-radius: 10px;
   box-shadow: -3px 0px 10px 0px rgba(174, 174, 174, 0.429);
   display: flex;
@@ -120,19 +116,40 @@ span {
   gap: 0.5em;
   align-items: center;
   text-align: justify;
-  padding: 5px;
+  padding: 5px 17px 60px 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.673);
+}
+.abc {
+  margin-top: 2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  color: black;
 }
 .heheh {
   width: fit-content;
   padding: 2em;
-  border-radius: 50px;
+  border-radius: 50%;
   margin: 10px;
 }
 .logo3 {
   background-color: rgb(25, 226, 7);
 }
+.about3 {
+  border-bottom: 8px solid rgb(25, 226, 7);
+}
 .logo4 {
   background-color: rgb(174, 114, 230);
+}
+.about4 {
+  border-bottom: 8px solid rgb(174, 114, 230);
+}
+.about5 {
+  border-bottom: 9px solid skyblue;
+}
+.about6 {
+  border-bottom: 8px solid rgb(233, 75, 75);
 }
 .logo5 {
   background-color: skyblue;
@@ -142,5 +159,5 @@ span {
 }
 .icon {
   color: rgb(255, 255, 255);
-  font-size: x-large;
+  font-size: 50px;
 }
