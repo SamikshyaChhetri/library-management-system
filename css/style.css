@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
 } */
 .container {
-  height: 90vh;
+  height: 100vh;
 }
 .wrap {
   display: flex;
@@ -74,13 +74,15 @@ span {
   text-align: center;
   color: rgba(0, 0, 0, 0.696);
 }
+.container_about {
+  background-color: whitesmoke;
+  margin: 0em 1em;
+  border-radius: 10px;
+}
 #about {
   display: flex;
   justify-content: space-around;
   gap: 5em;
-  background-color: whitesmoke;
-  margin: 0em 1em;
-  border-radius: 10px;
   padding-top: 3em;
   align-items: center;
 }
@@ -99,4 +101,52 @@ span {
 .about2 img {
   height: 400px;
   width: 400px;
+}
+.wrap_about {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 5px;
+  margin-top: 3em;
+  grid-gap: 1em;
+  justify-content: center;
+}
+.abc {
+  /* height: 15em; */
+  margin-top: 2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.hehe {
+  height: 18em;
+  width: 19em;
+  border-radius: 10px;
+  box-shadow: -3px 0px 10px 0px rgba(174, 174, 174, 0.429);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+  text-align: justify;
+  padding: 5px;
+}
+.heheh {
+  width: fit-content;
+  padding: 2em;
+  border-radius: 50px;
+  margin: 10px;
+}
+.logo3 {
+  background-color: rgb(25, 226, 7);
+}
+.logo4 {
+  background-color: rgb(174, 114, 230);
+}
+.logo5 {
+  background-color: skyblue;
+}
+.logo6 {
+  background-color: rgb(233, 75, 75);
+}
+.icon {
+  color: rgb(255, 255, 255);
+  font-size: x-large;
 }
