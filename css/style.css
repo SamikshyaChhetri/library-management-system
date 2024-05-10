@@ -1,3 +1,7 @@
+/* * {
+  background-image: url("/images/bg.webp");
+  background-repeat: no-repeat;
+} */
 .wrap {
   display: flex;
   justify-content: space-around;
@@ -37,4 +41,29 @@ img {
 .log a:hover {
   color: white;
   background-color: blueviolet;
+}
+.library {
+  justify-content: center;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  gap: 0.5em;
+  margin-top: 4em;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+span {
+  background-color: rgb(246, 57, 57);
+  padding: 5px;
+  border-radius: 10px;
+}
+.abt {
+  font-size: 15px;
+  width: 50%;
+  font-weight: lighter;
+  text-align: center;
 }
