@@ -1,18 +1,40 @@
 .wrap {
   display: flex;
-  justify-content: space-between;
-  /* gap: 10em; */
+  justify-content: space-around;
+  gap: 20em;
+  /* position: fixed; */
 }
 .nav {
-  border: 1px solid black;
+  display: flex;
+  gap: 50px;
   align-items: center;
-  gap: 20px;
 }
 .nav a {
   text-decoration: none;
-  /* padding: 2em; */
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 10px;
 }
 img {
   height: 60px;
   width: 70px;
+}
+.log {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.log a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  padding: 12px;
+  border-radius: 10px;
+}
+.nav a:hover,
+.log a:hover {
+  color: white;
+  background-color: blueviolet;
 }
