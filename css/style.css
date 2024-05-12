@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-around;
   gap: 20em;
-  /* position: fixed; */
 }
 .nav {
   display: flex;
