@@ -131,7 +131,7 @@ span {
   width: fit-content;
   padding: 2em;
   border-radius: 50%;
-  /* margin: 10px; */
+  margin: 10px;
 }
 .logo3 {
   background-color: rgb(25, 226, 7);
