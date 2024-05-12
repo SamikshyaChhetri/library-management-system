@@ -177,7 +177,7 @@ span {
 .feature_list {
   display: flex;
   justify-content: space-around;
-  gap: 30em;
+  gap: 25em;
 }
 .wrap1 {
   display: flex;
@@ -200,11 +200,36 @@ span {
   gap: 10px;
   margin: 2em 0em 3em 0em;
 }
-.icon_first {
+.ic {
   padding: 0.5em;
   border-radius: 100%;
   margin: 10px;
-  background-color: rgb(25, 226, 7);
-  width: 100px;
+  width: 80px;
   text-align: center;
+  font-size: 30px;
+}
+.icon_first {
+  background-color: rgba(255, 121, 72, 0.704);
+  color: rgb(255, 68, 0);
+}
+.icon_sec {
+  background-color: rgba(135, 207, 235, 0.73);
+  color: rgb(30, 184, 245);
+}
+.icon_third {
+  background-color: rgba(145, 255, 187, 0.708);
+  color: rgb(46, 250, 77);
+}
+.icon_fourth {
+  background-color: rgba(145, 156, 255, 0.708);
+  color: rgb(46, 53, 250);
+  height: 40px;
+}
+.icon_fifth {
+  background-color: rgba(250, 145, 255, 0.708);
+  color: rgb(226, 46, 250);
+}
+.icon_sixth {
+  background-color: rgba(243, 194, 103, 0.682);
+  color: orange;
 }
