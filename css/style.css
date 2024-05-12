@@ -73,7 +73,6 @@ span {
 }
 .container_about {
   background-color: whitesmoke;
-  margin: 0em 1em;
   border-radius: 10px;
 }
 #about {
@@ -168,16 +167,18 @@ span {
   display: flex;
   flex-direction: column;
   gap: 3em;
+  margin-bottom: 2em;
 }
 .feature_title {
-  margin: 5em 0em 0em 3em;
+  margin: 3em 0em 0em 0em;
+  text-align: center;
   font-size: 40px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .feature_list {
   display: flex;
   justify-content: space-around;
-  gap: 25em;
+  gap: 20em;
 }
 .wrap1 {
   display: flex;
@@ -232,4 +233,20 @@ span {
 .icon_sixth {
   background-color: rgba(243, 194, 103, 0.682);
   color: orange;
+}
+.icon_seventh {
+  background-color: rgba(217, 103, 243, 0.682);
+  color: rgb(183, 0, 255);
+}
+.icon_eigth {
+  background-color: rgba(32, 218, 172, 0.775);
+  color: rgb(33, 211, 167);
+  /* background-color: rgba(245, 70, 245, 0.78);
+  color: rgb(247, 68, 247); */
+}
+.first_part {
+  margin-left: 3em;
+}
+.second_part {
+  margin-right: 3em;
 }
