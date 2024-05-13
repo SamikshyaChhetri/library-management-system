@@ -255,13 +255,15 @@ span {
   margin-top: 5em;
   display: flex;
   flex-direction: column;
-  gap: 3em;
+  gap: 5em;
+  height: 100vh;
 }
 .connect {
   text-align: center;
   font-size: 40px;
   font-weight: bold;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin: 2em; */
 }
 .form {
   display: flex;
@@ -288,4 +290,14 @@ input[type="submit"] {
   height: 3em;
   border-radius: 5px;
   color: white;
+}
+.text {
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.665);
+  font-size: larger;
+  margin-top: 2em;
 }
