@@ -305,7 +305,7 @@ input[type="submit"]:hover {
   flex-direction: column;
   gap: 1em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgba(0, 0, 0, 0.665);
+  color: rgba(0, 0, 0, 0.603);
   font-size: larger;
   /* margin-top: 2em; */
 }
