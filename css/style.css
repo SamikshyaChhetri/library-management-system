@@ -249,6 +249,7 @@ span {
 .container_form {
   display: flex;
   justify-content: space-around;
+  /* gap: 1em; */
 }
 .form {
   display: flex;
@@ -275,4 +276,6 @@ input[type="submit"] {
   height: 3em;
   border-radius: 5px;
   color: white;
+}
+#contact {
 }
