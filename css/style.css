@@ -7,7 +7,13 @@
 .wrap {
   display: flex;
   justify-content: space-around;
-  gap: 20em;
+  /* gap: 30em; */
+  position: fixed;
+  top: 0;
+  padding-top: 7px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add bottom shadow */
 }
 .nav {
   display: flex;
@@ -28,7 +34,7 @@ img {
 }
 .log {
   display: flex;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 .log a {
@@ -44,14 +50,15 @@ img {
   color: white;
   background-color: blueviolet;
 }
-.library {
-  justify-content: center;
+#home {
   text-align: center;
   display: flex;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
   font-size: 40px;
   gap: 0.8em;
-  margin-top: 5em;
+  height: 100vh;
   font-weight: bolder;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -62,7 +69,7 @@ span {
   padding: 8px;
   border-radius: 10px;
 }
-#home {
+.library {
   font-size: 15px;
   font-weight: lighter;
   text-align: center;
