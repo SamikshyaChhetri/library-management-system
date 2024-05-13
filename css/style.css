@@ -200,13 +200,13 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5em;
+  padding: 25px;
   border-radius: 100%;
   margin: 10px;
-  width: 100px;
+  /* width: 100px; */
   text-align: center;
   font-size: 30px;
-  height: 40px;
+  /* height: 40px; */
 }
 .icon_first {
   background-color: rgba(255, 121, 72, 0.704);
@@ -223,6 +223,7 @@ span {
 .icon_fourth {
   background-color: rgba(145, 156, 255, 0.708);
   color: rgb(46, 53, 250);
+  padding: 25px 30px;
 }
 .icon_fifth {
   background-color: rgba(250, 145, 255, 0.708);
@@ -235,10 +236,11 @@ span {
 .icon_seventh {
   background-color: rgba(217, 103, 243, 0.682);
   color: rgb(183, 0, 255);
+  padding: 25px 30px;
 }
 .icon_eigth {
-  background-color: rgba(32, 218, 172, 0.775);
-  color: rgb(33, 211, 167);
+  background-color: rgba(96, 247, 209, 0.702);
+  color: rgb(61, 224, 183);
 }
 .first_part {
   margin-left: 3em;
@@ -255,7 +257,6 @@ span {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 5em;
   height: 100vh;
   background-color: whitesmoke;
 }
