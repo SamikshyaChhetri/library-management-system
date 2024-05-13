@@ -253,11 +253,26 @@ span {
 .form {
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
+  width: 30%;
 }
-input {
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
   height: 2em;
-  text-align: justify;
-  padding: 0em 5em 0em 5em;
-  margin: 1em;
+  text-align: left;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 0.5px solid #ccc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea {
+  height: 10em;
+}
+input[type="submit"] {
+  background-color: blueviolet;
+  height: 3em;
+  border-radius: 5px;
+  color: white;
 }
