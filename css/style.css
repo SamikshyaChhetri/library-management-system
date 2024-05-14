@@ -4,7 +4,7 @@
 .container {
   height: 100vh;
 }
-.wrap {
+#wrap {
   display: flex;
   justify-content: space-around;
   /* gap: 30em; */
@@ -13,7 +13,8 @@
   padding-top: 7px;
   width: 100%;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add bottom shadow */
+  transition: 0.2s ease-in-out;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
 }
 .nav {
   display: flex;
@@ -47,8 +48,8 @@ img {
 }
 .nav a:hover,
 .log a:hover {
-  color: white;
-  background-color: blueviolet;
+  color: rgb(131, 22, 232);
+  /* background-color: blueviolet; */
 }
 #home {
   text-align: center;
