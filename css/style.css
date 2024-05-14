@@ -47,7 +47,6 @@ img {
 .nav a:hover,
 .log a:hover {
   color: rgb(131, 22, 232);
-  /* background-color: blueviolet; */
 }
 #home {
   text-align: center;
