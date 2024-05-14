@@ -7,7 +7,6 @@
 #wrap {
   display: flex;
   justify-content: space-around;
-  /* gap: 30em; */
   position: fixed;
   top: 0;
   padding-top: 7px;
