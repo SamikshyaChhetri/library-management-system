@@ -355,7 +355,11 @@ footer {
   display: flex;
   gap: 1em;
   font-size: 10px;
-  text-align: justify;
+  justify-content: center;
+}
+.social_img {
+  display: flex;
+  align-items: center;
 }
 .social_img img {
   height: 40px;
@@ -363,9 +367,13 @@ footer {
 }
 .imgfb img {
   height: 35px;
-  width: 35px;
+  width: 40px;
+}
+.imgln img {
+  height: 45px;
+  width: 48px;
 }
 .imggh img {
   height: 35px;
-  width: 35px;
+  width: 39px;
 }
