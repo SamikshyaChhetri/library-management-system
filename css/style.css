@@ -346,7 +346,6 @@ footer {
   text-align: left;
   display: flex;
   justify-content: space-around;
-  /* gap: 1em; */
 }
 .txt {
   display: flex;
