@@ -338,13 +338,7 @@ input[type="submit"]:hover {
   background-color: rgba(173, 93, 248, 0.664);
   color: rgb(131, 18, 237);
 }
-input:focus ~ label,
-input:valid ~ label,
-textarea:focus ~ label,
-textarea:focus ~ label {
-  top: -35px;
-  font-size: 14px;
-}
+
 footer {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
