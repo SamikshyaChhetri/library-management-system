@@ -340,12 +340,36 @@ input[type="submit"]:hover {
 }
 
 footer {
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: larger;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 1em; */
 }
-.footer {
+.txt {
   display: flex;
   flex-direction: column;
+  gap: 1.3em;
+  font-size: 20px;
+  text-align: center;
+}
+.social {
+  display: flex;
   gap: 1em;
+  font-size: 10px;
+  text-align: justify;
+}
+.social_img img {
+  height: 40px;
+  width: 45px;
+}
+.imgfb img {
+  height: 35px;
+  width: 35px;
+}
+.imggh img {
+  height: 35px;
+  width: 35px;
 }
