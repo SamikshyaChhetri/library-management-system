@@ -335,9 +335,11 @@ input[type="submit"]:hover {
   background-color: rgba(173, 93, 248, 0.664);
   color: rgb(131, 18, 237);
 }
-
 footer {
   background-color: #333;
+}
+
+.wrapDivs {
   color: #fff;
   padding: 20px;
   text-align: left;
@@ -418,4 +420,11 @@ footer {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.76);
   text-align: justify;
+}
+.copyright {
+  color: white;
+  margin-top: 5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: small;
 }
