@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
@@ -61,13 +62,13 @@
         </div>
       </div>
       <div class="wrap_about">
-        <div class="about3 hehe">
+        <div class="about3 hehe" data-aos="fade-right" data-aos-duration="2000">
           <div class="header3 abc">Manage Library Patron Details</div>
           <div class="logo3 heheh"><i class="fa-solid fa-book icon"></i></div>
           Effortlessly keep track of all library patron details and update them
           promptly as needed, minimizing search time and enhancing efficiency.
         </div>
-        <div class="about4 hehe">
+        <div class="about4 hehe" data-aos="fade-right" data-aos-duration="2000">
           <div class="header4 abc">Efficient Task Tracking</div>
 
           <div class="logo4 heheh">
@@ -77,7 +78,7 @@
           resources, and ensure smooth operations in every aspect of your
           library management tasks.
         </div>
-        <div class="about5 hehe">
+        <div class="about5 hehe" data-aos="fade-left" data-aos-duration="2000">
           <div class="header5 abc">Effortless Book & User Handling</div>
 
           <div class="logo5 heheh"><i class="fa-solid fa-users icon"></i></div>
@@ -85,7 +86,7 @@
           automates these processes, making them seamless and accurate, directly
           from the library database.
         </div>
-        <div class="about6 hehe">
+        <div class="about6 hehe" data-aos="fade-left" data-aos-duration="2000">
           <div class="header6 abc">Support for Various User Roles</div>
 
           <div class="logo6 heheh">
@@ -100,9 +101,11 @@
       </div>
     </div>
     <div id="feature">
-      <div class="feature_title">Features we <span>OFFER</span></div>
+      <div class="feature_title" data-aos="fade-top" data-aos-duration="2000">
+        Features we <span>OFFER</span>
+      </div>
       <div class="feature_list">
-        <div class="first_part">
+        <div class="first_part" data-aos="fade-right" data-aos-duration="2000">
           <div class="wrapall">
             <div class="icon_first ic">
               <i class="fa-solid fa-table-columns"></i>
@@ -158,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="second_part">
+        <div class="second_part" data-aos="fade-left" data-aos-duration="2000">
           <div class="wrapall">
             <div class="icon_fourth ic">
               <i class="fa-solid fa-clipboard-user"></i>
@@ -216,9 +219,11 @@
       </div>
     </div>
     <div id="contact">
-      <div class="connect">Get in <span>TOUCH</span></div>
+      <div class="connect" data-aos="fade-top" data-aos-duration="2000">
+        Get in <span>TOUCH</span>
+      </div>
       <div class="container_form">
-        <div class="text">
+        <div class="text" data-aos="fade-right" data-aos-duration="2000">
           Have something to say? We are here to help. Fill up the form <br />
           or send email or call us.
           <div class="wrap_both">
@@ -240,7 +245,7 @@
             <div class="mymail common">samikshyabchhetri@gmail.com</div>
           </div>
         </div>
-        <div class="form">
+        <div class="form" data-aos="fade-left" data-aos-duration="2000">
           <label for="name"></label>
           <input
             type="text"
@@ -287,7 +292,7 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer data-aos="fade-bottom" data-aos-duration="1000">
       <div class="wrapDivs">
         <div class="txt">
           SOCIAL
@@ -351,6 +356,10 @@
         Copyright © 2024 PKC LIBRARY. | All Rights Reserved.
       </div> -->
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
   <script src="./js/script.js"></script>
 </html>
