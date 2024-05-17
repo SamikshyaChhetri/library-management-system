@@ -377,3 +377,21 @@ footer {
   height: 35px;
   width: 39px;
 }
+.help {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 0.5em;
+}
+.helpp a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 0em 0.5em 0em;
+}
+.helpp a:hover {
+  color: blueviolet;
+}
