@@ -403,4 +403,6 @@ footer {
 }
 .info {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  color: rgba(255, 255, 255, 0.76);
 }
