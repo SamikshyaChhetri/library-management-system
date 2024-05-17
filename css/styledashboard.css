@@ -1,6 +1,6 @@
 body {
   margin: 0em;
-  padding: 2em 0em 2em 2em;
+  padding: 2em 0em 2em 1em;
   width: 98%;
   height: 100%;
   background-color: rgb(255, 255, 255);
@@ -53,48 +53,58 @@ input[type="text"] {
   /* padding-top: 5em; */
   display: flex;
   flex-direction: column;
-  gap: 4em;
+  gap: 3em;
   font-size: larger;
   width: fit-content;
 }
 .container {
   display: flex;
   /* justify-content: space-around; */
-  gap: 2em;
-  padding-top: 3em;
+  gap: 1em;
+  padding-top: 2em;
+}
+.icon {
+  padding: 1.4em;
+  text-align: center;
+}
+.icon:hover {
+  cursor: pointer;
+  background-color: rgba(137, 43, 226, 0.788);
+  color: white;
+  border-radius: 50px;
 }
 .wrap3 {
   background-color: rgba(225, 224, 224, 0.575);
   height: 100vh;
   width: 100%;
+  border-radius: 50px 0px 0px 0px;
 }
 .box {
   display: flex;
-  justify-content: space-around;
-  gap: 1em;
-}
-.books {
-  border: 1px solid black;
+  justify-content: space-between;
+  gap: 0.5em;
   padding: 1em;
-  height: 5em;
-  width: 15em;
-  border-radius: 10px;
-  background-color: white;
 }
 .userSide {
-  /* background-color: rgba(0, 0, 0, 0.705); */
-  border-radius: 50px 0px 0px 0px;
   display: flex;
   flex-direction: column;
-  padding: 2em 1em;
-  gap: 0.4em;
+  gap: 0.5em;
+  padding: 1em 1em;
   font-size: xx-large;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
 }
+.books {
+  /* border: 1px solid black; */
+  padding: 1em;
+  height: 8em;
+  width: 17.4em;
+  border-radius: 10px;
+  background-color: white;
+}
 span {
-  color: red;
+  color: blueviolet;
 }
 #time {
   font-size: large;
