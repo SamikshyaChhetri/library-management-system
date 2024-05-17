@@ -411,7 +411,6 @@ footer {
   flex-direction: column;
   width: 30%;
   gap: 1em;
-  text-align: center;
   font-size: 20px;
 }
 .motive {
