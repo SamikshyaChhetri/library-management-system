@@ -19,7 +19,7 @@ body {
 
 .wrap {
   display: flex;
-  justify-content: space-between; /* use space-between to ensure items are spaced properly */
+  justify-content: space-between;
   width: 100%;
 }
 .wrap2 {
