@@ -3,8 +3,8 @@ body {
   padding: 2em 0em 2em 2em;
   width: 98%;
   height: 100%;
-  background-color: gray;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .wrap1,
@@ -65,8 +65,24 @@ input[type="text"] {
 }
 .userSide {
   /* background-color: rgba(0, 0, 0, 0.705); */
-  background-color: rgba(73, 73, 73, 0.727);
+  background-color: rgba(225, 224, 224, 0.575);
   height: 100vh;
   width: 100%;
   border-radius: 50px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 1em;
+  gap: 0.4em;
+  font-size: xx-large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+span {
+  color: red;
+}
+#time {
+  font-size: large;
+  color: rgba(0, 0, 0, 0.614);
+  font-weight: normal;
 }
