@@ -406,3 +406,10 @@ footer {
   font-size: medium;
   color: rgba(255, 255, 255, 0.76);
 }
+.pkc {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1em;
+  text-align: center;
+}
