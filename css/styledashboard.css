@@ -63,11 +63,26 @@ input[type="text"] {
   gap: 2em;
   padding-top: 3em;
 }
-.userSide {
-  /* background-color: rgba(0, 0, 0, 0.705); */
+.wrap3 {
   background-color: rgba(225, 224, 224, 0.575);
   height: 100vh;
   width: 100%;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+.books {
+  border: 1px solid black;
+  padding: 1em;
+  height: 5em;
+  width: 15em;
+  border-radius: 10px;
+  background-color: white;
+}
+.userSide {
+  /* background-color: rgba(0, 0, 0, 0.705); */
   border-radius: 50px 0px 0px 0px;
   display: flex;
   flex-direction: column;
