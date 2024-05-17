@@ -1,7 +1,7 @@
 body {
   margin: 0em;
-  padding: 2em;
-  width: 95%;
+  padding: 2em 0em 2em 2em;
+  width: 98%;
   height: 100%;
   background-color: gray;
   color: white;
@@ -11,7 +11,7 @@ body {
 .wrap2 {
   display: flex;
   justify-content: space-around;
-  gap: 1.5em;
+  gap: 1em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: large;
@@ -23,7 +23,7 @@ body {
   width: 100%;
 }
 .wrap2 {
-  margin-right: 1em;
+  /* margin-right: 1em; */
   font-size: 20px;
 }
 input[type="text"] {
@@ -37,6 +37,7 @@ input[type="text"] {
 }
 .photo {
   font-size: 30px;
+  padding-right: 1em;
 }
 .name {
   display: flex;
@@ -47,4 +48,25 @@ input[type="text"] {
   color: rgba(255, 255, 255, 0.768);
   font-size: 12px;
   text-align: center;
+}
+.logos {
+  /* padding-top: 5em; */
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  font-size: larger;
+  width: fit-content;
+}
+.container {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 2em;
+  padding-top: 3em;
+}
+.userSide {
+  /* background-color: rgba(0, 0, 0, 0.705); */
+  background-color: rgba(73, 73, 73, 0.727);
+  height: 100vh;
+  width: 100%;
+  border-radius: 50px 0px 0px 0px;
 }
