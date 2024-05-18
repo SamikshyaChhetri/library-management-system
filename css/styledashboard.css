@@ -103,7 +103,7 @@ input[type="text"] {
 }
 .books {
   height: 8em;
-  width: 17.4em;
+  width: 22%;
   border-radius: 15px;
   background-color: white;
   display: flex;
@@ -155,9 +155,6 @@ th {
   font-family: sans-serif;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* gap: 0.5em; */
 }
 table {
   width: 100%;
