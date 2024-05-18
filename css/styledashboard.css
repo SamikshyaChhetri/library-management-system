@@ -128,7 +128,6 @@ span {
   font-size: larger;
   padding: 1em;
   background-color: rgba(137, 43, 226, 0.788);
-
   color: white;
   border-radius: 50px;
   text-align: center;
@@ -150,9 +149,14 @@ th {
   padding: 1em;
   border-bottom: 1px solid black;
 }
+
 .userlist {
   height: 50vh;
   border-radius: 10px;
   background-color: white;
   width: 45%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
