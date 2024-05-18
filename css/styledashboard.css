@@ -69,7 +69,6 @@ input[type="text"] {
 
 .container {
   display: flex;
-  /* justify-content: space-around; */
   gap: 1em;
   padding-top: 2em;
 }
@@ -85,7 +84,6 @@ input[type="text"] {
 }
 .wrap3 {
   width: 100%;
-  /* border-radius: 50px 0px 0px 0px; */
 }
 .box {
   display: flex;
