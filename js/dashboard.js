@@ -76,6 +76,12 @@ const people = [
     bookIssued: "Data Science for Business",
     department: "Data Science",
   },
+  {
+    userId: 10,
+    userName: "John Smith",
+    bookIssued: "Introduction to Machine Learning",
+    department: "Computer Science",
+  },
 ];
 const display = document.getElementById("tableBody");
 people.forEach((person) => {
@@ -87,4 +93,53 @@ people.forEach((person) => {
           <td>${person.department}</td>
         </tr>
       `;
+});
+const books = [
+  {
+    bookId: 101,
+    bookTitle: "JavaScript: The Good Parts",
+    bookAuthor: "Douglas Crockford",
+    available: true,
+  },
+  {
+    bookId: 102,
+    bookTitle: "Introduction to Algorithms",
+    bookAuthor: "Thomas H. Cormen",
+    available: false,
+  },
+  {
+    bookId: 103,
+    bookTitle: "Design Patterns: Elements of Reusable Object-Oriented Software",
+    bookAuthor: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+    available: true,
+  },
+  {
+    bookId: 104,
+    bookTitle: "Artificial Intelligence: A Modern Approach",
+    bookAuthor: "Stuart Russell, Peter Norvig",
+    available: true,
+  },
+  {
+    bookId: 105,
+    bookTitle: "Data Science for Business",
+    bookAuthor: "Foster Provost, Tom Fawcett",
+    available: false,
+  },
+  // {
+  //   bookId: 106,
+  //   bookTitle: "Clean Code: A Handbook of Agile Software Craftsmanship",
+  //   bookAuthor: "Robert C. Martin",
+  //   available: true,
+  // },
+];
+const displayBooks = document.getElementById("tableBody2");
+books.forEach((a) => {
+  displayBooks.innerHTML += `
+  <tr>
+    <td>${a.bookId}</td>
+    <td>${a.bookTitle}</td>
+    <td>${a.bookAuthor}</td>
+    <td>${a.available}</td>
+  </tr>
+  `;
 });

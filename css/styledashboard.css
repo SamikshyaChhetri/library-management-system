@@ -146,13 +146,15 @@ span {
 th {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
-  padding: 1em;
+  padding: 0.5em;
+  height: 2em;
+  width: 3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.602);
   color: rgba(0, 0, 0, 0.602);
 }
 
 .userlist {
-  height: 50vh;
+  height: 55vh;
   border-radius: 10px;
   background-color: white;
   width: 45%;
@@ -161,6 +163,9 @@ th {
   font-family: sans-serif;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 table {
   width: 100%;
@@ -173,4 +178,13 @@ td {
   padding: 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.601);
   color: rgba(0, 0, 0, 0.742);
+}
+.seeMore {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  padding: 0.5em;
+  color: rgba(137, 43, 226, 0.788);
+  text-align: right;
+  align-self: right;
+  border-radius: 20px;
 }
