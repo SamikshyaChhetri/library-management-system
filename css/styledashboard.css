@@ -97,14 +97,29 @@ input[type="text"] {
 }
 .books {
   /* border: 1px solid black; */
-  padding: 1em;
+  padding-top: 1em;
   height: 8em;
   width: 17.4em;
   border-radius: 10px;
   background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  /* gap: 0.1em; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 span {
   color: blueviolet;
+}
+.icon2 {
+  font-size: larger;
+  padding: 1em;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
 }
 #time {
   font-size: large;
