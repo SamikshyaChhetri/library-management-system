@@ -117,7 +117,7 @@ input[type="text"] {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  /* gap: 0.1em; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -160,6 +160,7 @@ th {
   padding: 1em;
   font-family: sans-serif;
   font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
 }
 table {
   width: 100%;
@@ -169,7 +170,7 @@ td {
   text-align: justify;
   font-size: smaller;
   font-weight: normal;
-  padding: 10px;
+  padding: 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.601);
   color: rgba(0, 0, 0, 0.742);
 }
