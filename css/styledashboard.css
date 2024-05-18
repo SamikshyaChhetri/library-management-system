@@ -95,9 +95,11 @@ input[type="text"] {
     "Lucida Sans", Arial, sans-serif;
   font-weight: bold;
 }
+.common {
+  padding-top: 1em;
+}
 .books {
   /* border: 1px solid black; */
-  padding-top: 1em;
   height: 8em;
   width: 17.4em;
   border-radius: 10px;
@@ -119,7 +121,7 @@ span {
   color: white;
   border-radius: 50px;
   text-align: center;
-  justify-content: center;
+  align-self: center;
 }
 #time {
   font-size: large;
