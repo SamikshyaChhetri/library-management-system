@@ -42,7 +42,5 @@ setInterval(() => {
     " " +
     hours +
     ":" +
-    min +
-    ":" +
-    sec;
+    min;
 }, 100);
