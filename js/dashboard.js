@@ -67,7 +67,7 @@ const people = [
   {
     userId: 4,
     userName: "Diana Prince",
-    bookIssued: "Artificial Intelligence: A Modern Approach",
+    bookIssued: "Artificial Intelligence",
     department: "AI Research",
   },
   {
@@ -77,9 +77,14 @@ const people = [
     department: "Data Science",
   },
 ];
-const display = document.getElementById("disp");
-people.forEach((a) => {
-  console.log(a.userId);
-  console.log(a.userName);
-  console.log(a.department);
+const display = document.getElementById("tableBody");
+people.forEach((person) => {
+  display.innerHTML += `
+        <tr>
+          <td>${person.userId}</td>
+          <td>${person.userName}</td>
+          <td>${person.bookIssued}</td>
+          <td>${person.department}</td>
+        </tr>
+      `;
 });
