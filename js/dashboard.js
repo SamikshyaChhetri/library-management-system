@@ -125,12 +125,6 @@ const books = [
     bookAuthor: "Foster Provost, Tom Fawcett",
     available: false,
   },
-  // {
-  //   bookId: 106,
-  //   bookTitle: "Clean Code: A Handbook of Agile Software Craftsmanship",
-  //   bookAuthor: "Robert C. Martin",
-  //   available: true,
-  // },
 ];
 const displayBooks = document.getElementById("tableBody2");
 books.forEach((a) => {
