@@ -257,7 +257,6 @@ span {
   justify-content: space-around;
 }
 #contact {
-  /* margin-top: 5em; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
