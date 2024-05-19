@@ -1,6 +1,6 @@
-arr = [
-  "Jan",
-  "Feb",
+const arr = [
+  "January",
+  "February",
   "March",
   "April",
   "May",
@@ -12,12 +12,12 @@ arr = [
   "November",
   "December",
 ];
-week = [
+const week = [
   "Sunday",
   "Monday",
   "Tuesday",
   "Wednesday",
-  "thursday",
+  "Thursday",
   "Friday",
   "Saturday",
 ];
@@ -30,7 +30,6 @@ setInterval(() => {
   let day = curr_date.getDay();
   let hours = curr_date.getHours();
   let min = curr_date.getMinutes();
-  let sec = curr_date.getSeconds();
   element.innerHTML =
     arr[month] +
     " " +
@@ -38,12 +37,12 @@ setInterval(() => {
     ", " +
     year +
     " " +
-    week[day - 1] +
+    week[day] +
     " " +
     hours +
     ":" +
     min;
-}, 100);
+}, 1000);
 
 const people = [
   {
