@@ -38,10 +38,13 @@ async function fetchSignIN() {
     {
       method: "post",
       body: "data",
+      body: JSON.stringyfy(data),
       headers: {
         "Content-Type": "application/json",
       },
     }
   );
   const data = await response.json();
+  console.log(data);
 }
+fetchSignIN();
