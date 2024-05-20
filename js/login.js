@@ -10,7 +10,16 @@ eyeIcon.addEventListener("click", () => {
     eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
-let mail = "samikshyabchhetri@gmail.com";
-let pw = "neheart";
-const email_name = document.getElementById("email");
-const pww = document.getElementById("password");
+
+const submit_msg = document.getElementById("submit");
+submit_msg.addEventListener("click", () => {
+  let mail = "samikshyabchhetri@gmail.com";
+  let pw = "neheart";
+  const email_name = document.getElementById("email");
+  const pww = document.getElementById("password");
+  if (mail === email_name) {
+    console.log("correct");
+  } else {
+    console.log("wrong");
+  }
+});
