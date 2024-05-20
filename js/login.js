@@ -10,3 +10,5 @@ eyeIcon.addEventListener("click", () => {
     eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
+let mail = "samikshyabchhetri@gmail.com";
+let pw = "neheart";
