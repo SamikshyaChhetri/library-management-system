@@ -15,9 +15,10 @@ const submit_msg = document.getElementById("submit");
 submit_msg.addEventListener("click", () => {
   let mail = "samikshyabchhetri@gmail.com";
   let pw = "neheart";
-  const email_name = document.getElementById("email");
-  const pww = document.getElementById("password");
-  if (mail === email_name) {
+  const email_name = document.getElementById("email").value;
+  const pww = document.getElementById("password").value;
+
+  if (mail === email_name && pw === pww) {
     console.log("correct");
   } else {
     console.log("wrong");
