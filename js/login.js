@@ -12,12 +12,12 @@ eyeIcon.addEventListener("click", () => {
 });
 
 const submit_msg = document.getElementById("submit");
-submit_msg.addEventListener("click", () => {
+submit_msg.addEventListener("click", (e) => {
+  e.preventDefault();
   let mail = "samikshyabchhetri@gmail.com";
   let pw = "neheart";
   const email_name = document.getElementById("email").value;
   const pww = document.getElementById("password").value;
-
   if (mail === email_name && pw === pww) {
     console.log("correct");
   } else {
