@@ -37,6 +37,11 @@ async function fetchSignIN() {
     "https://lms.sachetsubedi001.com.np/api/auth/logIn",
     {
       method: "post",
+      body: "data",
+      headers: {
+        "Content-Type": "application/json",
+      },
     }
   );
+  const data = await response.json();
 }
