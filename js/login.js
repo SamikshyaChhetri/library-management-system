@@ -12,3 +12,5 @@ eyeIcon.addEventListener("click", () => {
 });
 let mail = "samikshyabchhetri@gmail.com";
 let pw = "neheart";
+const email_name = document.getElementById("email");
+const pww = document.getElementById("password");
