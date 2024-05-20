@@ -27,3 +27,16 @@ submit_msg.addEventListener("click", (e) => {
     window.alert("Invalid email or password");
   }
 });
+
+const data = {
+  email: "samuu@gmail.com",
+  password: "hehehe",
+};
+async function fetchSignIN() {
+  const response = await fetch(
+    "https://lms.sachetsubedi001.com.np/api/auth/logIn",
+    {
+      method: "post",
+    }
+  );
+}
