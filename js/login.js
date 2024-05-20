@@ -10,6 +10,8 @@ eyeIcon.addEventListener("click", () => {
     eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
+// const loc = window.location.href;
+// console.log(loc);
 
 const submit_msg = document.getElementById("submit");
 submit_msg.addEventListener("click", (e) => {
@@ -20,7 +22,8 @@ submit_msg.addEventListener("click", (e) => {
   const pww = document.getElementById("password").value;
   if (mail === email_name && pw === pww) {
     console.log("correct");
+    window.location.href = "../pages/dashboard.html";
   } else {
-    console.log("wrong");
+    window.alert("Invalid email or password");
   }
 });
