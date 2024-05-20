@@ -12,6 +12,7 @@ const func = async () => {
         password: "hello",
       }),
     }
+  );
   const data = await response.json();
   console.log(data);
 };
