@@ -28,7 +28,7 @@ submit_msg.addEventListener("click", (e) => {
   }
 });
 
-const data = {
+const data_pass = {
   email: "samuu@gmail.com",
   password: "hehehe",
 };
@@ -38,7 +38,7 @@ async function fetchSignIN() {
     {
       method: "post",
       body: "data",
-      body: JSON.stringyfy(data),
+      body: JSON.stringify(data_pass),
       headers: {
         "Content-Type": "application/json",
       },
