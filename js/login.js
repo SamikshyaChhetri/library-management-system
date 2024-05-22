@@ -29,8 +29,8 @@ submit_msg.addEventListener("click", (e) => {
 });
 
 const data_pass = {
-  email: "samuu@gmail.com",
-  password: "hehehe",
+  email: "alxisamikshya@gmail.com",
+  password: "alxi",
 };
 async function fetchSignIN() {
   const response = await fetch(

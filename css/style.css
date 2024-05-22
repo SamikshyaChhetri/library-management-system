@@ -255,12 +255,13 @@ span {
 .container_form {
   display: flex;
   justify-content: space-around;
+  height: 70vh;
 }
 #contact {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  /* height: 80vh; */
   background-color: whitesmoke;
 }
 .connect {
