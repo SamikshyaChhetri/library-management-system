@@ -38,9 +38,10 @@ submit_msg.addEventListener("click", async (e) => {
   submit_msg.innerHTML = "Login";
 
   if (response.status == "200") {
+    localStorage.setItem("token", data.data.token);
+    console.log(data);
+
     window.location.href = "../pages/dashboard.html";
-    const storeLocal = localStorage.setItem("token", JSON.stringify(token));
-    console.log(storeLocal);
   } else if (response.status == "401") {
     alert("Invalid  password");
   } else if (response.status == "404") {
