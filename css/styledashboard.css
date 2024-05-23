@@ -58,7 +58,7 @@ input[type="text"] {
   display: flex;
   flex-direction: column;
   background-color: rgba(225, 224, 224, 0.575);
-  height: 110vh;
+  padding-bottom: 2em;
   width: 100%;
   border-radius: 50px 0px 0px 0px;
   gap: 2em;
@@ -145,7 +145,7 @@ th {
 }
 
 .userlist {
-  height: 60vh;
+  /* height: auto; */
   border-radius: 10px;
   background-color: white;
   width: 45%;
