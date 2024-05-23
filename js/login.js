@@ -36,7 +36,6 @@ submit_msg.addEventListener("click", async (e) => {
   console.log(data);
   console.log(response.status);
   submit_msg.innerHTML = "Login";
-
   if (response.status == "200") {
     localStorage.setItem("token", data.data.token);
     console.log(data);
