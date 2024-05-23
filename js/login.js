@@ -51,5 +51,5 @@ submit_msg.addEventListener("click", async (e) => {
 });
 const tokenFromLocalstorage = localstorage.getItem("token");
 if (tokenFromLocalstorage) {
-  location.href = "/dashboard.html";
+  window.location.href = "./dashboard.html";
 }
