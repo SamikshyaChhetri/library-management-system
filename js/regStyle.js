@@ -31,7 +31,7 @@ submit_button.addEventListener("click", async (e) => {
     if (response.status == "200") {
       localStorage.setItem("token", data.data.token);
       console.log(data);
-      window.location.href = "../pages/dashboard.html";
+      window.location.href = "../pages/login.html";
     } else {
       alert(data.message);
     }
