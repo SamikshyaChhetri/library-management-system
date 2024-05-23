@@ -11,8 +11,11 @@ eyeIcon.addEventListener("click", () => {
   }
 });
 const submit_msg = document.getElementById("submit");
+const title = document.getElementById("title");
 submit_msg.addEventListener("click", async (e) => {
   e.preventDefault();
+  submit_msg.innerHTML = "Please wait...";
+
   const emailName = document.getElementById("email").value;
   const pw = document.getElementById("password").value;
   const data_pass = {
@@ -32,6 +35,8 @@ submit_msg.addEventListener("click", async (e) => {
   const data = await response.json();
   console.log(data);
   console.log(response.status);
+  submit_msg.innerHTML = "Login";
+
   if (response.status == "200") {
     window.location.href = "../pages/dashboard.html";
   } else if (response.status == "401") {
