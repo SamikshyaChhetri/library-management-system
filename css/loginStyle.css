@@ -4,6 +4,9 @@ p {
   padding-top: 20px;
   text-align: center;
 }
+body {
+  display: flex;
+}
 .log {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
@@ -19,15 +22,28 @@ input[type="password"] {
   margin: 9px 0px;
   border: none;
 }
+.new {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
   background-color: white;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 150px;
-  margin-left: 500px;
   border-radius: 20px;
   padding-bottom: 40px;
+  align-items: center;
+}
+.loginTitle {
+  font-size: larger;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .rem {
   display: flex;
@@ -75,10 +91,7 @@ button:hover {
   color: rgb(240, 19, 19);
   cursor: pointer;
 }
-.new {
-  display: flex;
-  justify-content: space-between;
-}
+
 .op img {
   height: 300px;
   width: 250px;
