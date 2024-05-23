@@ -27,7 +27,6 @@ submit_msg.addEventListener("click", (e) => {
     window.alert("Invalid email or password");
   }
 });
-
 const data_pass = {
   email: "alxisamikshya@gmail.com",
   password: "alxi",
