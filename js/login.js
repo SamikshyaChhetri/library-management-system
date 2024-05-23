@@ -49,3 +49,7 @@ submit_msg.addEventListener("click", async (e) => {
     alert("Server error");
   }
 });
+const tokenFromLocalstorage = localstorage.getItem("token");
+if (tokenFromLocalstorage) {
+  location.href = "/dashboard.html";
+}
