@@ -10,22 +10,6 @@ eyeIcon.addEventListener("click", () => {
     eyeIcon.classList.replace("fa-eye", "fa-eye-slash");
   }
 });
-// const loc = window.location.href;
-// console.log(loc);
-
-// submit_msg.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   let mail = "samikshyabchhetri@gmail.com";
-//   let pw = "neheart";
-//   const email_name = document.getElementById("email").value;
-//   const pww = document.getElementById("password").value;
-//   if (mail === email_name && pw === pww) {
-//     console.log("correct");
-//     window.location.href = "../pages/dashboard.html";
-//   } else {
-//     window.alert("Invalid email or password");
-//   }
-// });
 const submit_msg = document.getElementById("submit");
 submit_msg.addEventListener("click", async (e) => {
   e.preventDefault();
