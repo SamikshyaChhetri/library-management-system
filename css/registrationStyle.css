@@ -49,10 +49,12 @@ input[type="password"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .wrap {
   justify-content: center;
   display: flex;
+  width: 30%;
   flex-direction: column;
   gap: 1em;
   padding: 2em;
@@ -89,7 +91,7 @@ button:hover {
 }
 .space {
   border-bottom: 1px solid black;
-  padding: em;
+  padding: 0.5em;
 }
 .fb {
   text-align: center;
