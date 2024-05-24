@@ -136,3 +136,7 @@ books.forEach((a) => {
   </tr>
   `;
 });
+const tokenFromLocalstorage = localStorage.getItem("token");
+if (!tokenFromLocalstorage) {
+  window.location.href = "../pages/login.html";
+}
