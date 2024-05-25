@@ -38,6 +38,7 @@ submit_msg.addEventListener("click", async (e) => {
   if (response.status == "200") {
     localStorage.setItem("token", data.data.token);
     localStorage.setItem("userid", data.data.user.id);
+    toast("Successfully signed in");
     window.location.href = "../pages/dashboard.html";
   } else if (response.status == "401") {
     alert("Invalid  password");
@@ -50,4 +51,10 @@ submit_msg.addEventListener("click", async (e) => {
 tokenFromLocalstorage = localStorage.getItem("token");
 if (tokenFromLocalstorage) {
   window.location.href = "../pages/dashboard.html";
+}
+
+function toast(a) {
+  const toastMessage = document.getElementById("toast");
+  toastMessage.style.top = "0";
+  toastMessage.innerHTML = a;
 }
