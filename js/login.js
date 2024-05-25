@@ -1,8 +1,9 @@
-function toast(a) {
+function toast(a, color) {
   const toastMessage = document.getElementById("toast");
   toastMessage.style.top = "10px";
   toastMessage.innerHTML = a;
   toastMessage.style.transition = "top 0.2s ease-in-out";
+  toastMessage.style.backgroundColor = color;
 }
 function removetoast() {
   setTimeout(() => {
@@ -49,7 +50,7 @@ submit_msg.addEventListener("click", async (e) => {
   console.log(response.status);
   submit_msg.innerHTML = "Login";
   if (response.status == "200") {
-    toast("Successfully signed in");
+    toast("Successfully signed in", "green");
     removetoast();
     localStorage.setItem("token", data.data.token);
     localStorage.setItem("userid", data.data.user.id);
@@ -57,16 +58,13 @@ submit_msg.addEventListener("click", async (e) => {
       window.location.href = "../pages/dashboard.html";
     }, 1000);
   } else if (response.status == "401") {
-    // alert("Invalid  password");
-    toast("Invalid password");
+    toast("Invalid password", "red");
     removetoast();
   } else if (response.status == "404") {
-    // alert("User not found");
-    toast("User not found");
+    toast("User not found", "red");
     removetoast();
   } else {
-    // alert("Server error");
-    toast("Server error");
+    toast("Server error", "red");
     removetoast();
   }
 });
