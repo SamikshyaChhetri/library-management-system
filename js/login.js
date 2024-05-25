@@ -44,14 +44,16 @@ submit_msg.addEventListener("click", async (e) => {
   if (response.status == "200") {
     localStorage.setItem("token", data.data.token);
     localStorage.setItem("userid", data.data.user.id);
-    toast("Successfully signed in");
     window.location.href = "../pages/dashboard.html";
   } else if (response.status == "401") {
-    alert("Invalid  password");
+    // alert("Invalid  password");
+    toast("Invalid password");
   } else if (response.status == "404") {
-    alert("User not found");
+    // alert("User not found");
+    toast("User not found");
   } else {
-    alert("Server error");
+    // alert("Server error");
+    toast("Server error");
   }
 });
 // tokenFromLocalstorage = localStorage.getItem("token");
