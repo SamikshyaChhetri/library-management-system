@@ -147,7 +147,7 @@ i {
   left: 270px;
   cursor: pointer;
 }
-#toast {
+/* #toast {
   position: absolute;
   padding: 0.7em 9em;
   background-image: linear-gradient(
@@ -186,4 +186,4 @@ i {
   left: 36.3%;
   border-radius: 10px;
   top: -50px;
-}
+} */

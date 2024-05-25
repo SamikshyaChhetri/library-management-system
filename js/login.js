@@ -1,3 +1,8 @@
+function toast(a) {
+  const toastMessage = document.getElementById("toast");
+  toastMessage.style.top = "0px";
+  toastMessage.innerHTML = a;
+}
 const eyeIcon = document.getElementById("eyee");
 const inputBox = document.getElementById("password");
 eyeIcon.addEventListener("click", () => {
@@ -31,6 +36,7 @@ submit_msg.addEventListener("click", async (e) => {
       },
     }
   );
+
   const data = await response.json();
   console.log(data);
   console.log(response.status);
@@ -48,13 +54,7 @@ submit_msg.addEventListener("click", async (e) => {
     alert("Server error");
   }
 });
-tokenFromLocalstorage = localStorage.getItem("token");
-if (tokenFromLocalstorage) {
-  window.location.href = "../pages/dashboard.html";
-}
-
-function toast(a) {
-  const toastMessage = document.getElementById("toast");
-  toastMessage.style.top = "0";
-  toastMessage.innerHTML = a;
-}
+// tokenFromLocalstorage = localStorage.getItem("token");
+// if (tokenFromLocalstorage) {
+//   window.location.href = "../pages/dashboard.html";
+// }
