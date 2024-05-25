@@ -141,16 +141,13 @@ if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
 }
 async function fetchData() {
-  useridfromlocalstorage = localStorage.getItem("userId");
+  useridfromlocalstorage = localStorage.getItem("userid");
   console.log(useridfromlocalstorage);
   const response = await fetch(
     "Https://lms.sachetsubedi001.com.np/api/auth/user/" +
       useridfromlocalstorage,
     {
       method: "get",
-      headers: {
-        "Content-Type": "application/json",
-      },
     }
   );
   const data = await response.json();
