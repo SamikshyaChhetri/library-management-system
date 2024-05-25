@@ -2,6 +2,7 @@ function toast(a) {
   const toastMessage = document.getElementById("toast");
   toastMessage.style.top = "0px";
   toastMessage.innerHTML = a;
+  toastMessage.style.transition = "top 0.5s ease-in-out";
 }
 function removetoast() {
   setTimeout(() => {
