@@ -2,7 +2,7 @@ function toast(a) {
   const toastMessage = document.getElementById("toast");
   toastMessage.style.top = "10px";
   toastMessage.innerHTML = a;
-  toastMessage.style.transition = "top 0.5s ease-in-out";
+  toastMessage.style.transition = "top 0.2s ease-in-out";
 }
 function removetoast() {
   setTimeout(() => {
@@ -49,9 +49,13 @@ submit_msg.addEventListener("click", async (e) => {
   console.log(response.status);
   submit_msg.innerHTML = "Login";
   if (response.status == "200") {
+    toast("Successfully signed in");
+    removetoast();
     localStorage.setItem("token", data.data.token);
     localStorage.setItem("userid", data.data.user.id);
-    window.location.href = "../pages/dashboard.html";
+    setTimeout(() => {
+      window.location.href = "../pages/dashboard.html";
+    }, 1000);
   } else if (response.status == "401") {
     // alert("Invalid  password");
     toast("Invalid password");
@@ -66,7 +70,7 @@ submit_msg.addEventListener("click", async (e) => {
     removetoast();
   }
 });
-tokenFromLocalstorage = localStorage.getItem("token");
-if (tokenFromLocalstorage) {
-  window.location.href = "../pages/dashboard.html";
-}
+// tokenFromLocalstorage = localStorage.getItem("token");
+// if (tokenFromLocalstorage) {
+//   window.location.href = "../pages/dashboard.html";
+// }
