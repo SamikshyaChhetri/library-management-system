@@ -140,3 +140,22 @@ const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
 }
+async function fetchData() {
+  usernamefromlocalstorage = localStorage.getItem("userid");
+  console.log(usernamefromlocalstorage);
+  const response = await fetch(
+    "Https://lms.sachetsubedi001.com.np/api/auth/user/" +
+      usernamefromlocalstorage,
+    {
+      method: "get",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  const data = await response.json();
+  console.log(data);
+}
+fetchData();
+const userName = document.getElementById("yourName");
+userName.innerHTML = usernamefromlocalstorage;

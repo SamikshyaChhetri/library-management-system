@@ -1,7 +1,6 @@
 const eyeIcon = document.getElementById("eyee");
 const inputBox = document.getElementById("password");
 eyeIcon.addEventListener("click", () => {
-  console.log("eyesss");
   if (inputBox.type === "password") {
     inputBox.type = "text";
     eyeIcon.classList.replace("fa-eye-slash", "fa-eye");
@@ -38,8 +37,7 @@ submit_msg.addEventListener("click", async (e) => {
   submit_msg.innerHTML = "Login";
   if (response.status == "200") {
     localStorage.setItem("token", data.data.token);
-    console.log(data);
-
+    localStorage.setItem("userid", data.data.user.id);
     window.location.href = "../pages/dashboard.html";
   } else if (response.status == "401") {
     alert("Invalid  password");
@@ -49,7 +47,7 @@ submit_msg.addEventListener("click", async (e) => {
     alert("Server error");
   }
 });
-const tokenFromLocalstorage = localStorage.getItem("token");
+tokenFromLocalstorage = localStorage.getItem("token");
 if (tokenFromLocalstorage) {
   window.location.href = "../pages/dashboard.html";
 }
