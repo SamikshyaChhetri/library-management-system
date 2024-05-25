@@ -148,4 +148,6 @@ i {
   cursor: pointer;
 }
 #toast {
+  position: absolute;
+  border: 1px solid black;
 }
