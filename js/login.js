@@ -68,7 +68,7 @@ submit_msg.addEventListener("click", async (e) => {
     removetoast();
   }
 });
-// tokenFromLocalstorage = localStorage.getItem("token");
-// if (tokenFromLocalstorage) {
-//   window.location.href = "../pages/dashboard.html";
-// }
+tokenFromLocalstorage = localStorage.getItem("token");
+if (tokenFromLocalstorage) {
+  window.location.href = "../pages/dashboard.html";
+}
