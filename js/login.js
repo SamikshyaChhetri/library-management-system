@@ -1,6 +1,6 @@
 function toast(a) {
   const toastMessage = document.getElementById("toast");
-  toastMessage.style.top = "0px";
+  toastMessage.style.top = "10px";
   toastMessage.innerHTML = a;
   toastMessage.style.transition = "top 0.5s ease-in-out";
 }
