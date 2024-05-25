@@ -3,6 +3,12 @@ function toast(a) {
   toastMessage.style.top = "0px";
   toastMessage.innerHTML = a;
 }
+function removetoast() {
+  setTimeout(() => {
+    const toastMessage = document.getElementById("toast");
+    toastMessage.style.top = "-50px";
+  }, 4000);
+}
 const eyeIcon = document.getElementById("eyee");
 const inputBox = document.getElementById("password");
 eyeIcon.addEventListener("click", () => {
@@ -48,12 +54,15 @@ submit_msg.addEventListener("click", async (e) => {
   } else if (response.status == "401") {
     // alert("Invalid  password");
     toast("Invalid password");
+    removetoast();
   } else if (response.status == "404") {
     // alert("User not found");
     toast("User not found");
+    removetoast();
   } else {
     // alert("Server error");
     toast("Server error");
+    removetoast();
   }
 });
 // tokenFromLocalstorage = localStorage.getItem("token");
