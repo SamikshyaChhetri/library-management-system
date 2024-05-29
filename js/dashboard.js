@@ -142,7 +142,6 @@ const getData = async () => {
   const displayBooks = document.getElementById("tableBody2");
 
   const data = await response.json();
-  // data.data.forEach((book) => {
   data.data.forEach((a) => {
     displayBooks.innerHTML += `
       <tr>
@@ -153,7 +152,6 @@ const getData = async () => {
       </tr>
       `;
   });
-  // });
 };
 getData();
 
