@@ -105,7 +105,7 @@ const getData = async () => {
         <td>${a.id}</td>
         <td>${a.title}</td>
         <td>${a.author}</td>
-        <td>${a.available}</td>
+        <td>${a.pages}</td>
       </tr>
       `;
   });
