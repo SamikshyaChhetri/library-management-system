@@ -93,49 +93,70 @@ people.forEach((person) => {
         </tr>
       `;
 });
-const books = [
-  {
-    bookId: 101,
-    bookTitle: "JavaScript: The Good Parts",
-    bookAuthor: "Douglas Crockford",
-    available: true,
-  },
-  {
-    bookId: 102,
-    bookTitle: "Introduction to Algorithms",
-    bookAuthor: "Thomas H. Cormen",
-    available: false,
-  },
-  {
-    bookId: 103,
-    bookTitle: "Design Patterns: Elements of Reusable Object-Oriented Software",
-    bookAuthor: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
-    available: true,
-  },
-  {
-    bookId: 104,
-    bookTitle: "Artificial Intelligence: A Modern Approach",
-    bookAuthor: "Stuart Russell, Peter Norvig",
-    available: true,
-  },
-  {
-    bookId: 105,
-    bookTitle: "Data Science for Business",
-    bookAuthor: "Foster Provost, Tom Fawcett",
-    available: false,
-  },
-];
-const displayBooks = document.getElementById("tableBody2");
-books.forEach((a) => {
-  displayBooks.innerHTML += `
-  <tr>
-    <td>${a.bookId}</td>
-    <td>${a.bookTitle}</td>
-    <td>${a.bookAuthor}</td>
-    <td>${a.available}</td>
-  </tr>
-  `;
-});
+// const books = [
+//   {
+//     bookId: 101,
+//     bookTitle: "JavaScript: The Good Parts",
+//     bookAuthor: "Douglas Crockford",
+//     available: true,
+//   },
+//   {
+//     bookId: 102,
+//     bookTitle: "Introduction to Algorithms",
+//     bookAuthor: "Thomas H. Cormen",
+//     available: false,
+//   },
+//   {
+//     bookId: 103,
+//     bookTitle: "Design Patterns: Elements of Reusable Object-Oriented Software",
+//     bookAuthor: "Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides",
+//     available: true,
+//   },
+//   {
+//     bookId: 104,
+//     bookTitle: "Artificial Intelligence: A Modern Approach",
+//     bookAuthor: "Stuart Russell, Peter Norvig",
+//     available: true,
+//   },
+//   {
+//     bookId: 105,
+//     bookTitle: "Data Science for Business",
+//     bookAuthor: "Foster Provost, Tom Fawcett",
+//     available: false,
+//   },
+// ];
+// const displayBooks = document.getElementById("tableBody2");
+// books.forEach((a) => {
+//   displayBooks.innerHTML += `
+//   <tr>
+//     <td>${a.bookId}</td>
+//     <td>${a.bookTitle}</td>
+//     <td>${a.bookAuthor}</td>
+//     <td>${a.available}</td>
+//   </tr>
+//   `;
+// });
+
+const getData = async () => {
+  const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
+  const displayBooks = document.getElementById("tableBody2");
+
+  const data = await response.json();
+  // data.data.forEach((book) => {
+  data.data.forEach((a) => {
+    displayBooks.innerHTML += `
+      <tr>
+        <td>${a.id}</td>
+        <td>${a.title}</td>
+        <td>${a.author}</td>
+        <td>${a.available}</td>
+      </tr>
+      `;
+  });
+  // });
+};
+getData();
+
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
