@@ -132,3 +132,7 @@ async function fetchData() {
   console.log(data);
 }
 fetchData();
+const addBooks = document.getElementById("addBook");
+addBooks.addEventListener("click", () => {
+  window.location.href = "../pages/bookaddition.html";
+});
