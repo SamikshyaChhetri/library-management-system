@@ -33,3 +33,17 @@ label {
   font-size: 25px;
   padding-bottom: 30px;
 }
+.button {
+  display: flex;
+  justify-content: center;
+}
+#btn {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: rgb(105, 180, 247);
+  color: white;
+  border: none;
+}
+#btn:hover {
+  background-color: rgb(31, 142, 239);
+}
