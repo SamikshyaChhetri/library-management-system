@@ -36,3 +36,5 @@ submitBooks.addEventListener("click", async (e) => {
     toast("Book added successfully", "green");
   }
 });
+
+// garaaa k garam  <input required> yeasri  ma required thapa vaneko k
