@@ -30,31 +30,33 @@ submitBooks.addEventListener("click", async (e) => {
     toast("Cannot add empty value ", "red");
 
     removetoast();
-  } else if (!bookname) {
+  }
+  if (!bookname) {
     const bkname = document.getElementById("bookTitle");
     bkname.style.border = "1.2px solid red";
-    removeBorder("1.2px solid blueviolet");
-
+    // removeBorder("1.2px solid blueviolet");
     // toast("Enter the Title", "red");
     // removetoast();
-  } else if (!authorName) {
+  }
+  if (!authorName) {
     const authName = document.getElementById("author");
     authName.style.border = "1.2px solid red";
-    removeBorder("1.2px solid blueviolet");
-
+    // removeBorder("1.2px solid blueviolet");
     // toast("Enter Author name", "red");
     // removetoast();
-  } else if (!bookPage) {
+  }
+  if (!bookPage) {
     const bkpage = document.getElementById("page");
     bkpage.style.border = "1.2px solid red";
-    removeBorder("1.2px solid blueviolet");
+    // removeBorder("1.2px solid blueviolet");
 
     // toast("Enter bookpage", "red");
     // removetoast();
-  } else if (!bookPrice) {
+  }
+  if (!bookPrice) {
     const bkprice = document.getElementById("price");
     bkprice.style.border = "1.2px solid red";
-    removeBorder("1.2px solid blueviolet");
+    // removeBorder("1.2px solid blueviolet");
 
     // toast("Enter bookprice");
     // removetoast();
