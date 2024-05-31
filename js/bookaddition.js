@@ -15,7 +15,6 @@ function removetoast() {
 const submitBooks = document.getElementById("btn");
 submitBooks.addEventListener("click", async (e) => {
   e.preventDefault();
-
   const bookname = document.getElementById("bookTitle").value;
   const authorName = document.getElementById("author").value;
   const bookPage = document.getElementById("page").value;
@@ -27,26 +26,60 @@ submitBooks.addEventListener("click", async (e) => {
     pages: Number(bookPage),
     price: Number(bookPrice),
   };
-  console.log(typeof Number(bookPage));
-  const response = await fetch("https://lms.sachetsubedi001.com.np/api/books", {
-    method: "post",
-    body: JSON.stringify(dataPass),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const data = await response.json();
-  console.log(data);
-  console.log(response.status);
-  if (response.status == 201) {
+  if (!bookname && !authorName && !bookPage && !bookPrice) {
+    toast("Cannot add empty value ", "red");
+
+    removetoast();
+  } else if (!bookname) {
+    const bkname = document.getElementById("bookTitle");
+    bkname.style.border = "1.2px solid red";
+
+    // toast("Enter the Title", "red");
+    // removetoast();
+  } else if (!authorName) {
+    const authName = document.getElementById("author");
+    authName.style.border = "1.2px solid red";
+
+    // toast("Enter Author name", "red");
+    // removetoast();
+  } else if (!bookPage) {
+    const bkpage = document.getElementById("page");
+    bkpage.style.border = "1.2px solid red";
+    // toast("Enter bookpage", "red");
+    // removetoast();
+  } else if (!bookPrice) {
+    const bkprice = document.getElementById("price");
+    bkprice.style.border = "1.2px solid red";
+    // toast("Enter bookprice");
+    // removetoast();
+  } else {
     toast("Book added successfully", "green");
     removetoast();
-  } else if (
-    bookname === "" ||
-    authorName === "" ||
-    bookPage === "" ||
-    bookPrice === ""
-  ) {
-    toast("Invalid", "red");
+    console.log(typeof Number(bookPage));
+    const response = await fetch(
+      "https://lms.sachetsubedi001.com.np/api/books",
+      {
+        method: "post",
+        body: JSON.stringify(dataPass),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(data);
   }
+
+  // console.log(response.status);
+  // if (response.status == 201) {
+  //   toast("Book added successfully", "green");
+  //   removetoast();
+  // } else if (
+  //   bookname === "" ||
+  //   authorName === "" ||
+  //   bookPage === "" ||
+  //   bookPrice === ""
+  // ) {
+  //   toast("Invalid", "red");
+  // }
 });
