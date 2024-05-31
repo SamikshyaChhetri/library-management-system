@@ -5,6 +5,13 @@ function toast(a, color) {
   toastMessage.style.transition = "top 0.2s ease-in-out";
   toastMessage.style.backgroundColor = color;
 }
+function removetoast() {
+  setTimeout(() => {
+    const toastMessage = document.getElementById("toast");
+    toastMessage.style.top = "-50px";
+  }, 4000);
+}
+
 const submitBooks = document.getElementById("btn");
 submitBooks.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -29,12 +36,17 @@ submitBooks.addEventListener("click", async (e) => {
     },
   });
   const data = await response.json();
-  console.log(typeof data);
   console.log(data);
   console.log(response.status);
   if (response.status == 201) {
     toast("Book added successfully", "green");
+    removetoast();
+  } else if (
+    bookname === "" ||
+    authorName === "" ||
+    bookPage === "" ||
+    bookPrice === ""
+  ) {
+    toast("Invalid", "red");
   }
 });
-
-// garaaa k garam  <input required> yeasri  ma required thapa vaneko k
