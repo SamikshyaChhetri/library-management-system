@@ -47,8 +47,8 @@ submitBooks.addEventListener("click", async (e) => {
     const bkprice = document.getElementById("price");
     bkprice.style.border = "1.2px solid red";
   } else {
-    toast("Book added successfully", "green");
-    removetoast();
+    // toast("Book added successfully", "green");
+    // removetoast();
     console.log(typeof Number(bookPage));
     const response = await fetch(
       "https://lms.sachetsubedi001.com.np/api/books",
@@ -61,6 +61,13 @@ submitBooks.addEventListener("click", async (e) => {
       }
     );
     const data = await response.json();
+    if (response.status == 201) {
+      toast("Book added successfully", "green");
+      removetoast();
+    } else {
+      toast("Error occured", "red");
+      removetoast();
+    }
     console.log(data);
   }
 });
@@ -73,3 +80,6 @@ bookdetail.forEach((item) => {
     e.target.style.border = "1.2px solid blueviolet";
   });
 });
+// ? what?  nothing, sakkyo yesko? hera na tmle kei nasakkeko vaye, herdai xu ekxin
+// xau? yass   yesto ni gara na, ek choti book add vayesi page khali garaideu na, reload garaide ni hunxa
+//aile kasto xa ra??, aaile boook aad vayesi toast ta dekhauxa, tara input ma field ma haleko jsta ko testaii hunxa k, arko add garna ko lagi khali gardine hola ni ta? eaaa testa
