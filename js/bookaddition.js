@@ -63,17 +63,13 @@ submitBooks.addEventListener("click", async (e) => {
     const data = await response.json();
     console.log(data);
   }
+});
 
-  // console.log(response.status);
-  // if (response.status == 201) {
-  //   toast("Book added successfully", "green");
-  //   removetoast();
-  // } else if (
-  //   bookname === "" ||
-  //   authorName === "" ||
-  //   bookPage === "" ||
-  //   bookPrice === ""
-  // ) {
-  //   toast("Invalid", "red");
-  // }
+const bookdetail = document.querySelectorAll(".bookDetail"); // Grab all the elements with the corresponding class,(gives an array of elements)
+// iterate through each element to add event listner
+bookdetail.forEach((item) => {
+  // listen to any change in the element and change the border to normal
+  item.addEventListener("change", (e) => {
+    e.target.style.border = "1.2px solid blueviolet";
+  });
 });
