@@ -138,3 +138,6 @@ const addBooks = document.getElementById("addBook");
 addBooks.addEventListener("click", () => {
   window.location.href = "../pages/bookaddition.html";
 });
+document.getElementById("seeMorebooks").addEventListener("click", () => {
+  window.location.href = "../pages/seeMoreBooks.html";
+});
