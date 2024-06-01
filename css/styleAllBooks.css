@@ -16,6 +16,7 @@
   border: none;
   background-color: white;
   font-size: 20px;
+  width: 150px;
 }
 #addBook:hover {
   background-color: blueviolet;
