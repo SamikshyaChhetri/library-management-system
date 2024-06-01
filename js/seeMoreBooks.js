@@ -7,6 +7,7 @@ const getData = async () => {
     bookCardsContainer.innerHTML += `
        <div class="bookCard">
        ${a.title}
+       
        </div>
         `;
   });
