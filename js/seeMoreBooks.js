@@ -1,16 +1,13 @@
 const getData = async () => {
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
-  const displayBooks = document.getElementById("tableBody2");
+  const bookCardsContainer = document.getElementById("bookCards");
 
   const data = await response.json();
   data.data.forEach((a) => {
-    displayBooks.innerHTML += `
-        <tr>
-          <td>${a.id}</td>
-          <td>${a.title}</td>
-          <td>${a.author}</td>
-          <td>${a.pages}</td>
-        </tr>
+    bookCardsContainer.innerHTML += `
+       <div class="bookCard">
+       ${a.title}
+       </div>
         `;
   });
 };
