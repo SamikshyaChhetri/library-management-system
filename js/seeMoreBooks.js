@@ -3,9 +3,7 @@ const getData = async () => {
   const displayBooks = document.getElementById("tableBody2");
 
   const data = await response.json();
-  const slicedDatas = data.data.slice(0, 6);
-
-  slicedDatas.forEach((a) => {
+  data.data.forEach((a) => {
     displayBooks.innerHTML += `
         <tr>
           <td>${a.id}</td>
