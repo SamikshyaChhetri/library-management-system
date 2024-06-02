@@ -93,7 +93,6 @@ people.forEach((person) => {
         </tr>
       `;
 });
-
 const getData = async () => {
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
   const displayBooks = document.getElementById("tableBody2");
