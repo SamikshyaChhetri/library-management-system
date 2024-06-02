@@ -6,7 +6,7 @@ const getData = async () => {
   data.data.forEach((a) => {
     bookCardsContainer.innerHTML += `
        <div class="bookCard">
-    <img src="../images/book.png!f305cw" alt="">
+    <img src="../images/book.png!f305cw" alt="" class="book">
 
        ${a.title}
 
