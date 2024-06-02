@@ -9,6 +9,9 @@ const getData = async () => {
     <img src="../images/book.png!f305cw" alt="" class="book">
 
        ${a.title}
+       ${a.author}
+       ${a.pages}
+
 
        </div>
         `;
