@@ -44,7 +44,13 @@ span {
   height: 32vh;
   width: 200px;
   border-radius: 10px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
 }
 .book {
   width: 200px;
+  border-radius: 10px;
+  border: 0px solid black;
 }
