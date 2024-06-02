@@ -18,7 +18,6 @@ const getData = async () => {
   });
 };
 getData();
-
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
