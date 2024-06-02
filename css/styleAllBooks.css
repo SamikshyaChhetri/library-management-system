@@ -35,12 +35,12 @@ span {
 .book-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
   padding: 20px;
   padding-top: 30px;
 }
 .bookCard {
-  border: 1px solid black;
+  border: 1.5px solid rgba(0, 0, 0, 0.324);
   width: 180px;
   border-radius: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
