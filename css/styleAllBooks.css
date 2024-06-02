@@ -41,18 +41,28 @@ span {
 }
 .bookCard {
   border: 1px solid black;
-  height: 32vh;
-  width: 200px;
+  /* height: 32vh; */
+  width: 180px;
   border-radius: 10px;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: 5px;
 }
 .book {
-  width: 200px;
+  width: 180px;
   border-radius: 10px;
   border: 0px solid black;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+.at {
+  font-weight: bold;
+}
+.aa {
+  color: rgba(0, 0, 0, 0.701);
+  font-size: small;
+}
+.ap {
+  padding: 20px 0px 5px 0px;
 }

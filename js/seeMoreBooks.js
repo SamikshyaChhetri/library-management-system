@@ -8,9 +8,9 @@ const getData = async () => {
        <div class="bookCard">
     <img src="../images/book.png!f305cw" alt="" class="book">
 
-       ${a.title}
-       ${a.author}
-       ${a.pages}
+       <div class="at">${a.title}</div>
+       <div class="aa">${a.author}</div>
+       <div class="ap">${a.pages}</div>
 
 
        </div>
