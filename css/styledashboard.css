@@ -186,13 +186,7 @@ td {
   color: rgb(132, 0, 255);
   cursor: pointer;
 }
-/* #addBook {
+#addBook {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  border: none;
-  font-weight: lighter;
-  color: rgba(137, 43, 226, 0.788);
-  font-weight: bold;
-  text-align: center;
-  background-color: white;
-} */
+}
