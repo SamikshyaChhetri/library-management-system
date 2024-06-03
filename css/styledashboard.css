@@ -44,6 +44,20 @@ input[type="text"] {
   font-size: 35px;
   padding-right: 1em;
 }
+.dropdownMenu {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* border: 1px solid black; */
+  padding: 10px;
+  border-radius: 10px;
+  color: blueviolet;
+  position: absolute;
+  background-color: white;
+  display: none;
+}
+.menu {
+  padding: 5px;
+}
 .bell {
   font-size: 30px;
 }
