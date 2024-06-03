@@ -138,3 +138,13 @@ addBooks.addEventListener("click", () => {
 document.getElementById("seeMorebooks").addEventListener("click", () => {
   window.location.href = "../pages/seeMoreBooks.html";
 });
+
+// Dropdown menu handler
+document.getElementById("userlogo").addEventListener("click", () => {
+  const menu = document.getElementById("dropdownMenu");
+  if (menu.style.display == "none") {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+});
