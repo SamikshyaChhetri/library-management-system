@@ -7,7 +7,6 @@ body {
   color: rgb(0, 0, 0);
 }
 .logo img {
-  /* height: 100px; */
   width: 80px;
 }
 .wrap1 {
@@ -21,7 +20,6 @@ body {
 .wrap {
   display: flex;
   justify-content: space-between;
-  /* gap: 20em; */
 }
 .wrap2 {
   font-size: 20px;
