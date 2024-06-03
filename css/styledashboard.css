@@ -165,7 +165,24 @@ td {
   border-bottom: 1px solid rgba(0, 0, 0, 0.601);
   color: rgba(0, 0, 0, 0.742);
 }
-
+.seeAllwrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1em;
+}
+.seeAllUsers {
+  font-weight: bold;
+  font-size: large;
+  color: rgba(137, 43, 226, 0.788);
+  width: fit-content;
+  padding: 10px;
+}
+.seeAllUsers:hover {
+  color: white;
+  cursor: pointer;
+  background-color: blueviolet;
+  border-radius: 10px;
+}
 .seemore_wrap {
   display: flex;
   justify-content: space-between;
