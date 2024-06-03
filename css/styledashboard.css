@@ -169,7 +169,8 @@ td {
 
 .seemore_wrap {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-top: 1em;
 }
 .seeMore {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
