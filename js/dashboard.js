@@ -151,9 +151,18 @@ userlogo.addEventListener("click", () => {
     userlogo.style.color = "black";
   }
 });
+
+// Dropdown close button handler
 document.getElementById("cross").addEventListener("click", () => {
   const menu = document.getElementById("dropdownMenu");
   const userlogo = document.getElementById("userlogo");
   menu.style.display = "none";
   userlogo.style.color = "black";
+});
+
+// Logout handler
+const logOut = document.getElementById("logout");
+logOut.addEventListener("click", () => {
+  localStorage.removeItem("token");
+  window.location.href = "../pages/login.html";
 });
