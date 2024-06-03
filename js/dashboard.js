@@ -98,12 +98,11 @@ const getData = async () => {
   const displayBooks = document.getElementById("tableBody2");
 
   const data = await response.json();
-  const slicedDatas = data.data.slice(0, 6);
+  const slicedDatas = data.data.slice(0, 7);
 
   slicedDatas.forEach((a) => {
     displayBooks.innerHTML += `
       <tr>
-        <td>${a.id}</td>
         <td>${a.title}</td>
         <td>${a.author}</td>
         <td>${a.pages}</td>
@@ -112,7 +111,6 @@ const getData = async () => {
   });
 };
 getData();
-
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
