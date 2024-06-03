@@ -1,13 +1,16 @@
 body {
   margin: 0em;
-  padding: 2em 0em 2em 1em;
+  padding: 0em 0em 0em 1em;
   width: 98%;
   height: 100%;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
-.wrap1,
-.wrap2 {
+.logo img {
+  /* height: 100px; */
+  width: 80px;
+}
+.wrap1 {
   display: flex;
   justify-content: space-around;
   gap: 1em;
@@ -18,10 +21,14 @@ body {
 .wrap {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  /* gap: 20em; */
 }
 .wrap2 {
   font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 3em;
+  padding-top: 1em;
 }
 input[type="text"] {
   padding: 0.6em 0.4em;
@@ -32,11 +39,17 @@ input[type="text"] {
   outline: none;
   border: 0.5px solid rgba(0, 0, 0, 0.791);
 }
+.input {
+  padding-top: 1em;
+}
 .photo {
-  font-size: 30px;
+  font-size: 35px;
   padding-right: 1em;
 }
-.name {
+.bell {
+  font-size: 30px;
+}
+/* .name {
   display: flex;
   flex-direction: column;
   padding-left: 3em;
@@ -45,7 +58,7 @@ input[type="text"] {
   color: rgba(255, 255, 255, 0.768);
   font-size: 12px;
   text-align: center;
-}
+} */
 .logos {
   /* padding-top: 5em; */
   display: flex;
@@ -67,7 +80,6 @@ input[type="text"] {
 .container {
   display: flex;
   gap: 1em;
-  padding-top: 2em;
 }
 .icon {
   padding: 1em;
