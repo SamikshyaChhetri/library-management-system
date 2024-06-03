@@ -140,11 +140,14 @@ document.getElementById("seeMorebooks").addEventListener("click", () => {
 });
 
 // Dropdown menu handler
-document.getElementById("userlogo").addEventListener("click", () => {
+const userlogo = document.getElementById("userlogo");
+userlogo.addEventListener("click", () => {
   const menu = document.getElementById("dropdownMenu");
   if (menu.style.display == "none") {
+    userlogo.style.color = "blueviolet";
     menu.style.display = "block";
   } else {
     menu.style.display = "none";
+    userlogo.style.color = "black";
   }
 });

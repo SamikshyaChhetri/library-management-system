@@ -70,16 +70,6 @@ input[type="text"] {
 .bell {
   font-size: 30px;
 }
-/* .name {
-  display: flex;
-  flex-direction: column;
-  padding-left: 3em;
-}
-.lib {
-  color: rgba(255, 255, 255, 0.768);
-  font-size: 12px;
-  text-align: center;
-} */
 .logos {
   /* padding-top: 5em; */
   display: flex;
