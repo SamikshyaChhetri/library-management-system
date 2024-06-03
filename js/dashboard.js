@@ -151,3 +151,9 @@ userlogo.addEventListener("click", () => {
     userlogo.style.color = "black";
   }
 });
+document.getElementById("cross").addEventListener("click", () => {
+  const menu = document.getElementById("dropdownMenu");
+  const userlogo = document.getElementById("userlogo");
+  menu.style.display = "none";
+  userlogo.style.color = "black";
+});
