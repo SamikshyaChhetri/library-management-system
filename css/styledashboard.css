@@ -176,12 +176,12 @@ span {
 }
 th {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
+  font-weight: normal;
   padding: 0.5em;
   height: 2em;
   width: 3em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.602);
-  color: rgba(0, 0, 0, 0.602);
+  color: rgb(0, 0, 0);
 }
 
 .userlist {
