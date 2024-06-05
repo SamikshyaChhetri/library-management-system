@@ -38,11 +38,12 @@ body {
     ),
     linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
 }
+
 input[type="text"],
 input[type="password"] {
   width: 100%;
-  padding: 15px 12px;
-  margin: 9px 0px;
+  padding: 12px 10px;
+  /* margin-top: 9px 15px; */
   border: none;
 }
 .container {
