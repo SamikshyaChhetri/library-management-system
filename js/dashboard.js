@@ -159,7 +159,6 @@ document.getElementById("cross").addEventListener("click", () => {
   menu.style.display = "none";
   userlogo.style.color = "black";
 });
-
 // Logout handler
 const logOut = document.getElementById("logout");
 logOut.addEventListener("click", () => {

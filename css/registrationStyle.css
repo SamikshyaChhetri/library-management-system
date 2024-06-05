@@ -74,7 +74,7 @@ input[type="password"] {
 
 label {
   font-size: large;
-  padding: 10px;
+  padding: 10px 10px 10px 0px;
 }
 
 button {
