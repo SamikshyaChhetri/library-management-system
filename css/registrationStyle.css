@@ -78,7 +78,6 @@ label {
   font-size: large;
   padding: 10px 10px 10px 0px;
 }
-
 button {
   background-color: #04aa6d;
   color: white;
@@ -99,7 +98,6 @@ button:hover {
   text-align: center;
   background-color: #1877f2;
   padding: 8px 0px;
-
   color: white;
   margin-top: 1em;
 }
