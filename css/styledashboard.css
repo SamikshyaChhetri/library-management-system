@@ -216,12 +216,14 @@ td {
   color: rgba(137, 43, 226, 0.788);
   width: fit-content;
   padding: 10px;
+  border-radius: 10px;
 }
 .seeAllUsers:hover {
   color: white;
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 .seemore_wrap {
   display: flex;
@@ -234,6 +236,7 @@ td {
   font-size: large;
   color: rgba(137, 43, 226, 0.788);
   padding: 10px;
+  border-radius: 10px;
 }
 
 .seeMore:hover {
@@ -241,6 +244,7 @@ td {
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 #addBook {
   border: none;
@@ -249,10 +253,12 @@ td {
   font-size: large;
   color: rgba(137, 43, 226, 0.788);
   padding: 10px;
+  border-radius: 10px;
 }
 #addBook:hover {
   color: white;
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
