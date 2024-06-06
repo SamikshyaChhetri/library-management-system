@@ -51,7 +51,6 @@ input[type="text"] {
 #dropdownMenu {
   font-size: 17px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* border: 1px solid black; */
   margin-top: 10px;
   border-radius: 10px;
   color: white;
@@ -112,12 +111,14 @@ input[type="text"] {
 .icon {
   padding: 1em;
   text-align: center;
+  border-radius: 50px;
 }
 .icon:hover {
   cursor: pointer;
   background-color: rgba(137, 43, 226, 0.788);
   color: white;
   border-radius: 50px;
+  transition: 0.3s ease-in-out;
 }
 .wrap3 {
   width: 100%;
