@@ -28,6 +28,7 @@ body {
   gap: 3em;
   padding-top: 1em;
 }
+
 input[type="text"] {
   padding: 0.6em 0.4em;
   width: 20em;
@@ -47,6 +48,7 @@ input[type="text"] {
 .userLogo:hover {
   color: blueviolet;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 #dropdownMenu {
   font-size: 17px;
