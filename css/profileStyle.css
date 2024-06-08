@@ -99,7 +99,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 8em;
+  gap: 5em;
 }
 
 img {
@@ -130,4 +130,20 @@ img {
     "Lucida Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.523);
   padding-top: 4px;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.generalwrap,
+.security {
+  text-align: left;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: larger;
+  border: 1px solid rgba(0, 0, 0, 0.693);
+  margin: 0em 1em 1em 1em;
+  border-radius: 10px;
 }
