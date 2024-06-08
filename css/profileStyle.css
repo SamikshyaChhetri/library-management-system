@@ -90,13 +90,10 @@ body {
 }
 
 .userProfile {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
   text-align: center;
   background-image: linear-gradient(white, white);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
   width: 60%;
 
