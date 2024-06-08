@@ -142,7 +142,7 @@ img {
   padding: 0.5em 0.5em 0.5em 0.5em;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.693);
+  border: 1px solid rgba(0, 0, 0, 0.326);
   margin: 0em 1em 1em 1em;
   border-radius: 10px;
   display: flex;
@@ -155,7 +155,7 @@ img {
 }
 .line {
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.596);
+  background-color: rgba(0, 0, 0, 0.253);
 }
 .details {
   font-size: 15px;
@@ -164,4 +164,23 @@ img {
 .text {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.529);
+}
+.textWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.edit {
+  font-size: 17px;
+  /* background-color: blueviolet; */
+  padding: 5px;
+  width: 70px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+}
+.edit:hover {
+  color: white;
+  background-color: blueviolet;
+  transition: 0.3s ease-in-out;
 }
