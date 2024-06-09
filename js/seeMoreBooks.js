@@ -37,8 +37,6 @@ async function fetchData() {
     }
   );
   const data = await response.json();
-  const userName = document.getElementById("yourName");
-  userName.innerHTML = data.data.name;
   console.log(data);
 }
 fetchData();
