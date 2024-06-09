@@ -1,3 +1,7 @@
+const tokenFromLocalstorage = localStorage.getItem("token");
+if (!tokenFromLocalstorage) {
+  window.location.href = "../pages/login.html";
+}
 async function fetchData() {
   useridfromlocalstorage = localStorage.getItem("userid");
   useremailfromlocalstorage = localStorage.getItem("userid");
