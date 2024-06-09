@@ -127,6 +127,8 @@ async function fetchData() {
   );
   const data = await response.json();
   const userName = document.getElementById("yourName");
+  const userImage = document.getElementById("myImage");
+  userImage.setAttribute("src");
   userName.innerHTML = data.data.name;
   console.log(data);
 }

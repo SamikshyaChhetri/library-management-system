@@ -35,7 +35,7 @@ submit_msg.addEventListener("click", async (e) => {
     password: pw,
   };
   const response = await fetch(
-    "https://lms.sachetsubedi001.com.np/api/auth/logIn",
+    "https://lms.sachetsubedi001.com.np/api/auth/login",
     {
       method: "post",
       body: JSON.stringify(data_pass),
