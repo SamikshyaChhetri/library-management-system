@@ -78,6 +78,7 @@ input[type="text"] {
   cursor: pointer;
   padding: 2px 6px;
   transition: 0.2s ease-in-out;
+  text-align: center;
   right: -5px;
   top: -10px;
 }
