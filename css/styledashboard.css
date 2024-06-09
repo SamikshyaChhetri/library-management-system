@@ -41,15 +41,7 @@ input[type="text"] {
 .input {
   padding-top: 1em;
 }
-.userLogo {
-  font-size: 40px;
-  padding-right: 1em;
-}
-.userLogo:hover {
-  color: blueviolet;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
+
 #dropdownMenu {
   font-size: 17px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -265,4 +257,15 @@ td {
   background-color: blueviolet;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
+}
+#myImage {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 1em;
+  border: 3px solid black;
+}
+#myImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

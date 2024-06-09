@@ -128,7 +128,10 @@ async function fetchData() {
   const data = await response.json();
   const userName = document.getElementById("yourName");
   const userImage = document.getElementById("myImage");
-  userImage.setAttribute("src");
+  userImage.setAttribute(
+    "src",
+    "https://avatar-letter.fun/api/file/set1/large/s/png"
+  );
   userName.innerHTML = data.data.name;
   console.log(data);
 }
@@ -142,15 +145,15 @@ document.getElementById("seeMorebooks").addEventListener("click", () => {
 });
 
 // Dropdown menu handler
-const userlogo = document.getElementById("userlogo");
+const userlogo = document.getElementById("myImage");
 userlogo.addEventListener("click", () => {
   const menu = document.getElementById("dropdownMenu");
   if (menu.style.display == "none") {
-    userlogo.style.color = "blueviolet";
+    // userlogo.style.color = "blueviolet";
     menu.style.display = "block";
   } else {
     menu.style.display = "none";
-    userlogo.style.color = "black";
+    // userlogo.style.color = "black";
   }
 });
 
@@ -159,7 +162,7 @@ document.getElementById("cross").addEventListener("click", () => {
   const menu = document.getElementById("dropdownMenu");
   const userlogo = document.getElementById("userlogo");
   menu.style.display = "none";
-  userlogo.style.color = "black";
+  // userlogo.style.color = "black";
 });
 // Logout handler
 const logOut = document.getElementById("logout");
