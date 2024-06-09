@@ -46,6 +46,9 @@ span {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
 }
 .book {
   width: 180px;
@@ -61,6 +64,14 @@ span {
   color: rgba(0, 0, 0, 0.701);
   font-size: small;
 }
+.wrapDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
 .ap {
-  padding: 20px 0px 5px 0px;
+  /* padding: 20px 0px 5px 0px; */
+  align-self: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
 }

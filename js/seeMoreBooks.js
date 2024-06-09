@@ -6,11 +6,15 @@ const getData = async () => {
   data.data.forEach((a) => {
     bookCardsContainer.innerHTML += `
        <div class="bookCard">
-    <img src="../images/book.png!f305cw" alt="" class="book">
+<div class="wrapDetails">
 
-       <div class="at">${a.title}</div>
-       <div class="aa">${a.author}</div>
-       <div class="ap">${a.pages}</div>
+    <img src="../images/book.png!f305cw" alt="" class="book">
+<div class="at">${a.title}</div>
+<div class="aa">${a.author}</div>
+</div>
+
+<div class="ap">${a.pages}</div>
+      
 
 
        </div>
