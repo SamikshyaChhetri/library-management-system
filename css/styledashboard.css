@@ -76,7 +76,7 @@ input[type="text"] {
   border-radius: 100%;
   position: absolute;
   cursor: pointer;
-  padding: 1px 4px;
+  padding: 2px 6px;
   transition: 0.2s ease-in-out;
   right: -5px;
   top: -10px;
