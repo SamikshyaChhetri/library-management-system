@@ -1,25 +1,33 @@
 const getData = async () => {
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
   const bookCardsContainer = document.getElementById("bookCards");
-
   const data = await response.json();
   data.data.forEach((a) => {
     bookCardsContainer.innerHTML += `
-       <div class="bookCard">
-<div class="wrapDetails">
-
+    <div class="bookCard">
+    <div class="wrapDetails">
+    
     <img src="../images/book.png!f305cw" alt="" class="book">
-<div class="at">${a.title}</div>
-<div class="aa">${a.author}</div>
-</div>
 
-<div class="ap">${a.pages}</div>
-      
-
-
-       </div>
-        `;
+    <div class="at">${a.title}</div>
+    <div class="aa">${a.author}</div>
+    </div>
+    <div class="ap">${a.pages}</div>
+    </div>
+    `;
   });
+  const display = document.querySelectorAll(".bookCard");
+  const displayDetails = document.getElementById("wrapContent");
+  display.forEach((item) => {
+    item.addEventListener("click", () => {
+      displayDetails.style.display = "flex";
+    });
+  });
+  const cancel = document
+    .getElementById("cancel")
+    .addEventListener("click", () => {
+      displayDetails.style.display = "none";
+    });
 };
 getData();
 const tokenFromLocalstorage = localStorage.getItem("token");
