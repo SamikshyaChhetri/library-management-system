@@ -4,30 +4,33 @@ const getData = async () => {
   const data = await response.json();
   data.data.forEach((a) => {
     bookCardsContainer.innerHTML += `
-    <div class="bookCard">
+    <div class="bookCard" > 
     <div class="wrapDetails">
     
     <img src="../images/book.png!f305cw" alt="" class="book">
-
+    
     <div class="at">${a.title}</div>
     <div class="aa">${a.author}</div>
     </div>
     <div class="ap">${a.pages}</div>
     </div>
+    </div>   
     `;
   });
   const display = document.querySelectorAll(".bookCard");
   const displayDetails = document.getElementById("wrapContent");
-  const titleName = document.getElementById("titleName");
-  const authorName = document.getElementById("authorName");
+  // const authorName = document.getElementById("authorName");
   display.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", async () => {
+      // titleName.innerHTML = "title";
+      // authorName.innerHTML = "author";
       displayDetails.style.top = "50%";
-      titleName.innerHTML = "title";
-      authorName.innerHTML = "author";
+
+      const response = await fetch(
+        "https://lms.sachetsubedi001.com.np/api/books/"
+      );
     });
   });
-
   const cancel = document
     .getElementById("cancel")
     .addEventListener("click", () => {
@@ -57,4 +60,3 @@ const addBooks = document.getElementById("addBook");
 addBooks.addEventListener("click", () => {
   window.location.href = "../pages/bookaddition.html";
 });
-//mathi bata aaxaina direct aairaxa, transition na vara hola ni ta🦗

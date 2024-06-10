@@ -75,15 +75,16 @@ span {
   gap: 0.3em;
 }
 .ap {
-  /* padding: 20px 0px 5px 0px; */
   align-self: flex-end;
   align-content: flex-end;
   align-items: flex-end;
 }
+
 .bookDetails {
   display: flex;
   justify-content: space-between;
 }
+
 .wrapTitleAuthor {
   display: flex;
   flex-direction: column;
