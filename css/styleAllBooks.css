@@ -51,6 +51,9 @@ span {
   justify-content: space-between;
   gap: 0px;
 }
+.bookCard:hover {
+  cursor: pointer;
+}
 .book {
   width: 180px;
   border-radius: 10px;
@@ -104,8 +107,9 @@ span {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
   transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s 0.5s ease-in-out;
 }
+
 .container {
   display: flex;
   justify-content: space-between;

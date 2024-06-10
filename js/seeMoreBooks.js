@@ -18,11 +18,16 @@ const getData = async () => {
   });
   const display = document.querySelectorAll(".bookCard");
   const displayDetails = document.getElementById("wrapContent");
+  const titleName = document.getElementById("titleName");
+  const authorName = document.getElementById("authorName");
   display.forEach((item) => {
     item.addEventListener("click", () => {
       displayDetails.style.top = "50%";
+      titleName.innerHTML = "title";
+      authorName.innerHTML = "author";
     });
   });
+
   const cancel = document
     .getElementById("cancel")
     .addEventListener("click", () => {
