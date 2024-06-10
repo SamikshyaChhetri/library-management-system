@@ -83,7 +83,6 @@ body {
     linear-gradient(to top, white 60%, rgb(144, 53, 229) 40%);
   height: 100vh; /* Ensures the gradient covers the full viewport height */
   margin: 0; /* Removes default body margin */
-  background-blend-mode: normal;
   display: flex;
   justify-content: center;
   align-items: center;
