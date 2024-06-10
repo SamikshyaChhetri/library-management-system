@@ -20,13 +20,13 @@ const getData = async () => {
   const displayDetails = document.getElementById("wrapContent");
   display.forEach((item) => {
     item.addEventListener("click", () => {
-      displayDetails.style.display = "flex";
+      displayDetails.style.top = "50%";
     });
   });
   const cancel = document
     .getElementById("cancel")
     .addEventListener("click", () => {
-      displayDetails.style.top = "50%";
+      displayDetails.style.top = "-100vh";
     });
 };
 getData();
@@ -52,3 +52,4 @@ const addBooks = document.getElementById("addBook");
 addBooks.addEventListener("click", () => {
   window.location.href = "../pages/bookaddition.html";
 });
+//mathi bata aaxaina direct aairaxa, transition na vara hola ni ta🦗
