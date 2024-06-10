@@ -14,6 +14,11 @@ async function fetchData() {
     }
   );
   const data = await response.json();
+  const userImage = document.getElementById("myImage");
+  userImage.setAttribute(
+    "src",
+    "https://avatar-letter.fun/api/file/set1/large/s/png"
+  );
   const userName = document.getElementById("yourName");
   const userEmail = document.getElementById("yourEmail");
   userName.innerHTML = data.data.name;
