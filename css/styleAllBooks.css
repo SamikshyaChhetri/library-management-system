@@ -92,9 +92,17 @@ span {
   width: 160px;
 }
 .wrapContent {
-  width: 35%;
+  width: 30%;
+  height: 50%;
   border-radius: 10px;
   padding: 1.5em;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  /* border: 1px solid black; */
+  top: 50%;
+  left: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  transform: translate(-50%, -50%);
 }
