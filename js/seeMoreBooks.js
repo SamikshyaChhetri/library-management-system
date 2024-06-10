@@ -26,7 +26,7 @@ const getData = async () => {
   const cancel = document
     .getElementById("cancel")
     .addEventListener("click", () => {
-      displayDetails.style.display = "none";
+      displayDetails.style.top = "50%";
     });
 };
 getData();
