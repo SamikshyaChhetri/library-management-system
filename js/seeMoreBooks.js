@@ -68,9 +68,20 @@ reserveBook.addEventListener("click", async () => {
       },
     }
   );
+
   const data = await response.json();
   // console.log(data);
   console.log(response.status);
+  if (response.status == 201) {
+    toast("Book reservation created successfully", "green");
+    removetoast();
+  } else if (response.status == 400) {
+    toast("Book already reserved", "red");
+    removetoast();
+  } else {
+    toast("Server Error", "red");
+    removetoast();
+  }
 });
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
