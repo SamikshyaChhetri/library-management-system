@@ -3,8 +3,9 @@ const getData = async () => {
   const bookCardsContainer = document.getElementById("bookCards");
   const data = await response.json();
   data.data.forEach((a) => {
+    console.log(a);
     bookCardsContainer.innerHTML += `
-    <div class="bookCard" > 
+    <div class="bookCard" data-id=${a.id} > 
     <div class="wrapDetails">
     
     <img src="../images/book.png!f305cw" alt="" class="book">
@@ -19,6 +20,7 @@ const getData = async () => {
   });
   const display = document.querySelectorAll(".bookCard");
   const displayDetails = document.getElementById("wrapContent");
+
   // const authorName = document.getElementById("authorName");
   display.forEach((item) => {
     item.addEventListener("click", async () => {
