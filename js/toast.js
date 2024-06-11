@@ -10,4 +10,7 @@ function removetoast() {
     const toastMessage = document.getElementById("toast");
     toastMessage.style.top = "-50px";
   }, 4000);
+  const displayDetails = document.getElementById("wrapContent");
+
+  displayDetails.style.top = "-100vh";
 }

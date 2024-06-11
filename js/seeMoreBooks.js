@@ -80,10 +80,12 @@ reserveBook.addEventListener("click", async () => {
   } else if (response.status == 400) {
     toast("Book already reserved", "red");
     removetoast();
+
     reserveBook.innerHTML = "Reserve";
   } else {
     toast("Server Error", "red");
     removetoast();
+
     reserveBook.innerHTML = "Reserve";
   }
 });
