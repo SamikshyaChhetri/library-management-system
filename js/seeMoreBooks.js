@@ -51,6 +51,7 @@ getData();
 //Book reservation part
 const reserveBook = document.getElementById("reserve");
 reserveBook.addEventListener("click", async () => {
+  reserveBook.innerHTML = "Creating a Reservation..";
   const userIdFromLocalstorage = localStorage.getItem("userid");
   const bookIdFromLocalstorage = localStorage.getItem("bookId");
 
@@ -75,12 +76,15 @@ reserveBook.addEventListener("click", async () => {
   if (response.status == 201) {
     toast("Book reservation created successfully", "green");
     removetoast();
+    reserveBook.innerHTML = "Reserve";
   } else if (response.status == 400) {
     toast("Book already reserved", "red");
     removetoast();
+    reserveBook.innerHTML = "Reserve";
   } else {
     toast("Server Error", "red");
     removetoast();
+    reserveBook.innerHTML = "Reserve";
   }
 });
 const tokenFromLocalstorage = localStorage.getItem("token");
