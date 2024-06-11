@@ -22,6 +22,7 @@ const getData = async () => {
   const displayDetails = document.getElementById("wrapContent");
   const titleName = document.getElementById("titleName");
   const authorName = document.getElementById("authorName");
+  const reserveBook = document.getElementById("reserve");
   // const wrapDiv = document.getElementById("wrapDiv");
   display.forEach((item) => {
     item.addEventListener("click", async () => {
