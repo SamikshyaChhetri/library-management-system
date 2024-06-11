@@ -3,7 +3,7 @@ const getData = async () => {
   const bookCardsContainer = document.getElementById("bookCards");
   const data = await response.json();
   data.data.forEach((a) => {
-    console.log(a);
+    // console.log(a);
     bookCardsContainer.innerHTML += `
     <div class="bookCard" data-id=${a.id} > 
     <div class="wrapDetails">
@@ -28,12 +28,14 @@ const getData = async () => {
       // wrapDiv.style.filter = "blur";
       displayDetails.style.top = "50%";
       const bookID = item.getAttribute("data-id");
+      localStorage.setItem("bookId", bookID);
+
       console.log(bookID);
       const response = await fetch(
         "https://lms.sachetsubedi001.com.np/api/books/" + bookID
       );
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
       titleName.innerHTML = data.data.title;
       authorName.innerHTML = data.data.author;
     });
@@ -49,10 +51,12 @@ getData();
 //Book reservation part
 const reserveBook = document.getElementById("reserve");
 reserveBook.addEventListener("click", async () => {
-  userIdFromLocalstorage = localStorage.getItem("userId");
+  const userIdFromLocalstorage = localStorage.getItem("userid");
+  const bookIdFromLocalstorage = localStorage.getItem("bookId");
 
   const data_pass = {
-    // userId: userIdFromLocalstorage,
+    userId: userIdFromLocalstorage,
+    bookId: bookIdFromLocalstorage,
   };
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/reservations/",
@@ -65,7 +69,8 @@ reserveBook.addEventListener("click", async () => {
     }
   );
   const data = await response.json();
-  console.log(data);
+  // console.log(data);
+  console.log(response.status);
 });
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
@@ -73,7 +78,6 @@ if (!tokenFromLocalstorage) {
 }
 async function fetchData() {
   useridfromlocalstorage = localStorage.getItem("userid");
-  console.log(useridfromlocalstorage);
   const response = await fetch(
     "Https://lms.sachetsubedi001.com.np/api/auth/user/" +
       useridfromlocalstorage,
