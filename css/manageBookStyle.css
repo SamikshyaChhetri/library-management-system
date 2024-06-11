@@ -1,3 +1,7 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 body {
   background-image: radial-gradient(
       circle at 29% 55%,
@@ -93,19 +97,44 @@ body {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   width: 40%;
   display: flex;
-  margin-top: 6em;
   flex-direction: column;
   text-align: center;
   gap: 2em;
+  padding: 2em;
 }
 .wrap {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
   border-radius: 10px;
+  align-items: center;
+  padding: 1em;
 }
 .manageBooks {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
+  text-align: justify;
+}
+.book1 {
+  font-weight: bolder;
+}
+.reserveDate {
+  color: rgba(0, 0, 0, 0.479);
+  font-size: small;
+}
+.return {
+  font-size: 17px;
+  background-color: rgb(163, 81, 241);
+  color: white;
+  padding: 7px 10px;
+  width: 70px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+}
+.return:hover {
+  color: white;
+  background-color: rgb(139, 31, 240);
+  cursor: pointer;
 }
