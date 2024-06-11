@@ -20,17 +20,22 @@ const getData = async () => {
   });
   const display = document.querySelectorAll(".bookCard");
   const displayDetails = document.getElementById("wrapContent");
-
-  // const authorName = document.getElementById("authorName");
+  const titleName = document.getElementById("titleName");
+  const authorName = document.getElementById("authorName");
+  // const wrapDiv = document.getElementById("wrapDiv");
   display.forEach((item) => {
     item.addEventListener("click", async () => {
-      // titleName.innerHTML = "title";
-      // authorName.innerHTML = "author";
+      // wrapDiv.style.filter = "blur";
       displayDetails.style.top = "50%";
-
+      const bookID = item.getAttribute("data-id");
+      console.log(bookID);
       const response = await fetch(
-        "https://lms.sachetsubedi001.com.np/api/books/"
+        "https://lms.sachetsubedi001.com.np/api/books/" + bookID
       );
+      const data = await response.json();
+      console.log(data);
+      titleName.innerHTML = data.data.title;
+      authorName.innerHTML = data.data.author;
     });
   });
   const cancel = document

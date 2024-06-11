@@ -12,48 +12,50 @@
     />
   </head>
   <body>
-    <div class="seeAll">Available <span>Books</span></div>
-    <div class="userlist">
-      <div id="bookCards" class="book-cards"></div>
-      <div class="wrap">
-        <button id="addBook">
-          Add Books <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
+    <div id="wrapDiv">
+      <div class="seeAll">Available <span>Books</span></div>
+      <div class="userlist">
+        <div id="bookCards" class="book-cards"></div>
+        <div class="wrap">
+          <button id="addBook">
+            Add Books <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <div class="wrapContent" id="wrapContent">
-      <div class="bookDetails">
-        <div class="wrapTitleAuthor">
-          <div class="wrapTitle">
-            <div class="btitle">Title:</div>
-            <div class="titlename" id="titleName">Name of book</div>
+      <div class="wrapContent" id="wrapContent">
+        <div class="bookDetails">
+          <div class="wrapTitleAuthor">
+            <div class="wrapTitle">
+              <div class="btitle">Title:</div>
+              <div class="titlename" id="titleName"></div>
+            </div>
+            <div class="wrapAuthor">
+              <div class="atitle">Author:</div>
+              <div class="authorName" id="authorName"></div>
+            </div>
           </div>
-          <div class="wrapAuthor">
-            <div class="atitle">Author:</div>
-            <div class="authorName" id="authorName">Name of author</div>
+          <div class="bookImage">
+            <img src="../images/book.png!f305cw" alt="" />
           </div>
         </div>
-        <div class="bookImage">
-          <img src="../images/book.png!f305cw" alt="" />
+        <div class="bookDescription">
+          <div class="desc">Description</div>
+          <div class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus, quae laboriosam? Fugiat architecto explicabo tenetur
+            assumenda nemo modi corporis non ratione sint ducimus accusamus
+            possimus vero consectetur fuga cum alias quis tempora consequuntur
+            facere, ea veritatis vitae? Quia, non exercitationem, voluptatum
+            repellat voluptate illo qui quibusdam aliquid laboriosam reiciendis
+            atque.
+          </div>
         </div>
-      </div>
-      <div class="bookDescription">
-        <div class="desc">Description</div>
-        <div class="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Voluptatibus, quae laboriosam? Fugiat architecto explicabo tenetur
-          assumenda nemo modi corporis non ratione sint ducimus accusamus
-          possimus vero consectetur fuga cum alias quis tempora consequuntur
-          facere, ea veritatis vitae? Quia, non exercitationem, voluptatum
-          repellat voluptate illo qui quibusdam aliquid laboriosam reiciendis
-          atque.
-        </div>
-      </div>
-      <div class="container">
-        <div class="available">Available</div>
-        <div class="wrapboth">
-          <div class="cancel" id="cancel">Cancel</div>
-          <div class="reserve">Reserve</div>
+        <div class="container">
+          <div class="available">Available</div>
+          <div class="wrapboth">
+            <div class="cancel" id="cancel">Cancel</div>
+            <div class="reserve">Reserve</div>
+          </div>
         </div>
       </div>
     </div>
