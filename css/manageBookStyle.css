@@ -91,99 +91,21 @@ body {
   background-image: linear-gradient(white, white);
   border-radius: 10px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  width: 60%;
+  width: 40%;
   display: flex;
   margin-top: 6em;
   flex-direction: column;
   text-align: center;
-  gap: 7em;
-}
-
-img {
-  border-radius: 50%;
-  height: 170px;
-  border: 8px solid white;
-  margin: auto;
-}
-.pfp {
-  color: white;
-  border-radius: 100%;
-  position: absolute;
-  cursor: pointer;
-  padding: 1px 4px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: auto;
-}
-.userName {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 35px;
-  color: rgba(0, 0, 0, 0.751);
-}
-.userID,
-.email {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.523);
-  padding-top: 4px;
+  gap: 2em;
 }
 .wrap {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.generalwrap,
-.securitywrap {
-  text-align: left;
-  padding: 0.5em 0.5em 0.5em 0.5em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.326);
-  margin: 0em 1em 1em 1em;
+  justify-content: space-between;
+  border: 1px solid black;
   border-radius: 10px;
+}
+.manageBooks {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
-}
-.general,
-.security {
-  font-weight: bold;
-}
-.line {
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.253);
-}
-.details {
-  font-size: 15px;
-  font-weight: bold;
-}
-.text {
-  font-size: 13px;
-  color: rgba(0, 0, 0, 0.529);
-}
-.textWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.edit,
-.manage {
-  font-size: 17px;
-  background-color: rgb(163, 81, 241);
-  color: white;
-  padding: 7px 10px;
-  width: 70px;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-}
-a {
-  text-decoration: none;
-}
-.edit:hover,
-.manage:hover {
-  color: white;
-  background-color: rgb(139, 31, 240);
-  cursor: pointer;
 }
