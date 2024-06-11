@@ -22,7 +22,6 @@ const getData = async () => {
   const displayDetails = document.getElementById("wrapContent");
   const titleName = document.getElementById("titleName");
   const authorName = document.getElementById("authorName");
-  const reserveBook = document.getElementById("reserve");
   // const wrapDiv = document.getElementById("wrapDiv");
   display.forEach((item) => {
     item.addEventListener("click", async () => {
@@ -46,6 +45,28 @@ const getData = async () => {
     });
 };
 getData();
+
+//Book reservation part
+const reserveBook = document.getElementById("reserve");
+reserveBook.addEventListener("click", async () => {
+  userIdFromLocalstorage = localStorage.getItem("userId");
+
+  const data_pass = {
+    // userId: userIdFromLocalstorage,
+  };
+  const response = await fetch(
+    "https://lms.sachetsubedi001.com.np/api/reservations/",
+    {
+      method: "post",
+      body: JSON.stringify(data_pass),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }
+  );
+  const data = await response.json();
+  console.log(data);
+});
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
