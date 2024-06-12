@@ -25,26 +25,28 @@ reservedBooks();
 
 //Returning book part
 
-const returnBookButton = document.querySelectorAll("return");
+const returnBookButton = document.querySelectorAll(".return");
 returnBookButton.forEach((e) => {
-  e.addEventListener("click", () => {
+  e.addEventListener("click", async () => {
     const returnBookId = e.getAttribute("data-id");
     localStorage.setItem("returnBookID", returnBookId);
-    const returningBookIDfromlocalstorage=localStorage.getItem("returnBookID")
+    const returningBookIDfromlocalstorage =
+      localStorage.getItem("returnBookID");
     console.log(returnBookId);
-    const data_pass={
-        returnBookID:returningBookIDfromlocalstorage
-    }
-    const response=await fetch("https://lms.sachetsubedi001.com.np/api/reservations/" + returnBookId,
-    {
-        method: "post",
-      body: JSON.stringify(data_pass),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-    const data= await response.json();
-    console.log(data)
+    const data_pass = {
+      returnBookID: returningBookIDfromlocalstorage,
+    };
+    const response = await fetch(
+      "https://lms.sachetsubedi001.com.np/api/reservations/" + returnBookId,
+      {
+        method: "delete",
+        body: JSON.stringify(data_pass),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(data);
   });
 });
-returnBookButton();
