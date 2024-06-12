@@ -48,7 +48,6 @@ const getData = async () => {
       // Add the book id to the local storage for future use
       localStorage.setItem("bookId", bookID);
 
-      // console.log(bookID);
       // Get the book details from api
       const response = await fetch(
         "https://lms.sachetsubedi001.com.np/api/books/" + bookID
