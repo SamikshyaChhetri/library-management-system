@@ -6,12 +6,12 @@ const reservedBooks = async () => {
       useridfromlocalstorage
   );
   const data = await response.json();
-  console.log(data);
+  console.log(data.data);
   const displayReservedBooks = document.getElementById("book");
-  data.forEach((element) => {
+  data.data.forEach((element) => {
     displayReservedBooks.innerHTML += `
           <tr>
-            <td>${element.title}</td>
+            <td>${element.book.author}</td>
           </tr>
           `;
   });
