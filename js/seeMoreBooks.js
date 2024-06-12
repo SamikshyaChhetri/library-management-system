@@ -1,7 +1,13 @@
 const getData = async () => {
+  // Fetch the books to display in the page
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
-  const bookCardsContainer = document.getElementById("bookCards");
+  // Get the data from the response
   const data = await response.json();
+
+  // Get the books container to add books to
+  const bookCardsContainer = document.getElementById("bookCards");
+
+  // Iteratate through all books and add them to the bookCardsContainer
   data.data.forEach((a) => {
     // console.log(a);
     bookCardsContainer.innerHTML += `
@@ -18,47 +24,76 @@ const getData = async () => {
     </div>   
     `;
   });
+
+  // Get all the book cards so that sabai ma event listner rakhera thichda modal tala lyauna paiyos
   const display = document.querySelectorAll(".bookCard");
   const displayDetails = document.getElementById("wrapContent");
   const titleName = document.getElementById("titleName");
   const authorName = document.getElementById("authorName");
-  // const wrapDiv = document.getElementById("wrapDiv");
+
+  // Iterate through every book cards to add event listner
   display.forEach((item) => {
     item.addEventListener("click", async () => {
-      // wrapDiv.style.filter = "blur";
-      displayDetails.style.top = "50%";
+      //add the event listner to each cards
+
+      // Show the display modal
+      const scrolledHeight = window.scrollY;
+      console.log(scrolledHeight);
+      displayDetails.style.top = scrolledHeight + 350 + "px";
+
+      // Get the book id to send to backend to get the book details and show in the modal
       const bookID = item.getAttribute("data-id");
+
+      // Add the book id to the local storage for future use
       localStorage.setItem("bookId", bookID);
 
-      console.log(bookID);
+      // console.log(bookID);
+      // Get the book details from api
       const response = await fetch(
         "https://lms.sachetsubedi001.com.np/api/books/" + bookID
       );
       const data = await response.json();
+
       // console.log(data);
+      // set the book details in the modal
       titleName.innerHTML = data.data.title;
       authorName.innerHTML = data.data.author;
     });
   });
-  const cancel = document
-    .getElementById("cancel")
-    .addEventListener("click", () => {
-      displayDetails.style.top = "-100vh";
-    });
+
+  // Cancel button handler
+  document.getElementById("cancel").addEventListener("click", () => {
+    displayDetails.style.top = "-100vh";
+  });
 };
+
+// const func = () => {
+//   // const element = document.getElementById("wrapdiv");
+//   const scrolledHeight = window.scrollY;
+//   if(scrolledHeight<=0){
+//   }
+//   console.log(scrolledHeight);
+// };
+// setInterval(func, 1);
 getData();
 
 //Book reservation part
+
+// Get the reserve button of the view book modal
 const reserveBook = document.getElementById("reserve");
 reserveBook.addEventListener("click", async () => {
+  // On click on the reserve button, get the userId and bookId from local storage from localStorage
   reserveBook.innerHTML = "Creating a Reservation..";
   const userIdFromLocalstorage = localStorage.getItem("userid");
   const bookIdFromLocalstorage = localStorage.getItem("bookId");
 
+  // Create a request body object to send to teh backend
   const data_pass = {
     userId: userIdFromLocalstorage,
     bookId: bookIdFromLocalstorage,
   };
+
+  // send user id and book id to reserve the crresponding book by the user
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/reservations/",
     {
@@ -89,6 +124,8 @@ reserveBook.addEventListener("click", async () => {
     reserveBook.innerHTML = "Reserve";
   }
 });
+
+// Check if the user is logged in or not
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
