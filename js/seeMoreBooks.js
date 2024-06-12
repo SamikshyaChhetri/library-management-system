@@ -68,14 +68,6 @@ const getData = async () => {
   });
 };
 
-// const func = () => {
-//   // const element = document.getElementById("wrapdiv");
-//   const scrolledHeight = window.scrollY;
-//   if(scrolledHeight<=0){
-//   }
-//   console.log(scrolledHeight);
-// };
-// setInterval(func, 1);
 getData();
 
 //Book reservation part
