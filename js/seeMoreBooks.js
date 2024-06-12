@@ -30,6 +30,7 @@ const getData = async () => {
   const displayDetails = document.getElementById("wrapContent");
   const titleName = document.getElementById("titleName");
   const authorName = document.getElementById("authorName");
+  const availableBooks = document.getElementById("available");
 
   // Iterate through every book cards to add event listner
   display.forEach((item) => {
@@ -54,10 +55,11 @@ const getData = async () => {
       );
       const data = await response.json();
 
-      // console.log(data);
+      console.log(data);
       // set the book details in the modal
       titleName.innerHTML = data.data.title;
       authorName.innerHTML = data.data.author;
+      availableBooks.innerHTML = data.data.available + " " + "Available";
     });
   });
 
