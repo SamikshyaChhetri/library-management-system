@@ -113,7 +113,7 @@ body {
 .manageBooks {
   display: flex;
   flex-direction: column;
-  gap: 0.3em;
+  gap: 0.5em;
   text-align: justify;
 }
 .book1 {
