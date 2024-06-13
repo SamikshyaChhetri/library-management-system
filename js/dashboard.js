@@ -128,10 +128,7 @@ async function fetchData() {
   const data = await response.json();
   const userName = document.getElementById("yourName");
   const userImage = document.getElementById("myImage");
-  userImage.setAttribute(
-    "src",
-    "https://avatar-letter.fun/api/file/set1/large/s/png"
-  );
+  userImage.setAttribute("src", data.data.avatar);
   userName.innerHTML = data.data.name;
   console.log(data);
 }
