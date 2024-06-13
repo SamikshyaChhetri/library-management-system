@@ -8,9 +8,12 @@ const reservedBooks = async () => {
   const data = await response.json();
   //   console.log(data.data);
   const displayReservedBooks = document.getElementById("booksContainer");
-  data.data.forEach((element) => {
-    // console.log(element);
-    displayReservedBooks.innerHTML += `
+  if (data.data.length === 0) {
+    displayReservedBooks.innerHTML = "No books reserved";
+  } else {
+    data.data.forEach((element) => {
+      // console.log(element);
+      displayReservedBooks.innerHTML += `
           <div class="book">
         <div class="manageBooks">
           <div class="book1"> ${element.book.title}</div>
@@ -19,7 +22,8 @@ const reservedBooks = async () => {
         <div class="return" data-id=${element.id}>Return</div>
       </div>
           `;
-  });
+    });
+  }
 
   //Returning book part
 
@@ -43,7 +47,10 @@ const reservedBooks = async () => {
       );
       const data = await response.json();
       toast("Returning Book", "green");
-      location.reload();
+
+      setTimeout(() => {
+        location.reload();
+      }, 1500);
       console.log(data);
     });
   });
