@@ -42,6 +42,7 @@ const reservedBooks = async () => {
         }
       );
       const data = await response.json();
+      toast("Returning Book", "green");
       location.reload();
       console.log(data);
     });
