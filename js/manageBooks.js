@@ -20,30 +20,31 @@ const reservedBooks = async () => {
       </div>
           `;
   });
+
+  //Returning book part
+
+  const returnBookButton = document.querySelectorAll(".return");
+  returnBookButton.forEach((item) => {
+    item.addEventListener("click", async (e) => {
+      const returnBookId = e.target.getAttribute("data-id");
+      const data_pass = {};
+
+      console.log(returnBookId);
+
+      const response = await fetch(
+        "https://lms.sachetsubedi001.com.np/api/reservations/" + returnBookId,
+        {
+          method: "Delete",
+          body: JSON.stringify(data_pass),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      location.reload();
+      console.log(data);
+    });
+  });
 };
 reservedBooks();
-
-//Returning book part
-
-const returnBookButton = document.querySelectorAll(".return");
-returnBookButton.forEach((item) => {
-  item.addEventListener("click", async (e) => {
-    const returnBookId = e.target.getAttribute("data-id");
-    const data_pass = {};
-
-    console.log(returnBookId);
-
-    const response = await fetch(
-      "https://lms.sachetsubedi001.com.np/api/reservations/" + returnBookId,
-      {
-        method: "Delete",
-        body: JSON.stringify(data_pass),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    const data = await response.json();
-    console.log(data);
-  });
-});
