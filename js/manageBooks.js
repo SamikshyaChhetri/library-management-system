@@ -50,11 +50,12 @@ const reservedBooks = async () => {
       );
 
       const data = await response.json();
-      toast("Returning Book", "green");
 
       setTimeout(() => {
         location.reload();
       }, 1500);
+      toast("Book Returned", "green");
+
       console.log(data);
     });
   });

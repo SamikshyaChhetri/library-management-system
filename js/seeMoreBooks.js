@@ -117,7 +117,6 @@ reserveBook.addEventListener("click", async () => {
     reserveBook.innerHTML = "Reserve";
   }
 });
-
 // Check if the user is logged in or not
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
