@@ -30,7 +30,10 @@ const reservedBooks = async () => {
   const returnBookButton = document.querySelectorAll(".return");
   returnBookButton.forEach((item) => {
     item.addEventListener("click", async (e) => {
+      item.innerHTML = "Returning";
+
       const returnBookId = e.target.getAttribute("data-id");
+
       const data_pass = {};
 
       console.log(returnBookId);
@@ -45,6 +48,7 @@ const reservedBooks = async () => {
           },
         }
       );
+
       const data = await response.json();
       toast("Returning Book", "green");
 
