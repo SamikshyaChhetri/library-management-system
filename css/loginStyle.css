@@ -123,16 +123,19 @@ button:hover {
   cursor: pointer;
 }
 input[type="password"] {
-  /* position: relative; */
+  position: relative;
 }
 
-.eye {
+#eyee {
   position: absolute;
-  top: 50%;
-  right: 10px;
+  top: 50.5%;
+  right: 39%;
   cursor: pointer;
+  align-items: center;
 }
-.pw {
+.pw,
+.emailInput {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 0.8em;
 }
