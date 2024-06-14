@@ -117,3 +117,7 @@ button:hover {
   color: rgb(15, 98, 193);
   text-decoration: none;
 }
+.reg:hover {
+  color: rgb(240, 19, 19);
+  cursor: pointer;
+}
