@@ -123,13 +123,10 @@ button:hover {
   cursor: pointer;
 }
 input[type="password"] {
-  position: relative;
-}
-/* .eye {
-  position: relative;
+  /* position: relative; */
 }
 
-.eye i {
+.eye {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -138,4 +135,4 @@ input[type="password"] {
 .pw {
   display: flex;
   justify-content: space-around;
-} */
+}
