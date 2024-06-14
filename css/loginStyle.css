@@ -96,8 +96,6 @@ button {
   background-color: #04aa6d;
   color: white;
   padding: 10px 20px;
-
-  /* margin-top: 2em; */
   border: none;
   width: 100%;
 }
@@ -123,10 +121,6 @@ button:hover {
   color: rgb(240, 19, 19);
   cursor: pointer;
 }
-input[type="password"] {
-  /* position: relative; */
-}
-
 .eye {
   position: absolute;
   top: 50%;
