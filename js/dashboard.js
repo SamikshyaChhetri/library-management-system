@@ -55,7 +55,7 @@ const getUserData = async () => {
     displayUserList.innerHTML += `
     <tr>
         <td class="userNameAvatar"> 
-        <img src=${user.avatar}>
+        <img class="avatar" src=${user.avatar}>
         ${user.name}</td>
         <td>${user.email}</td>
       </tr>
