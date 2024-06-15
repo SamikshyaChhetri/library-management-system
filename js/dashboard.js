@@ -68,7 +68,7 @@ const getData = async () => {
   const displayBooks = document.getElementById("tableBody2");
 
   const data = await response.json();
-  const slicedDatas = data.data.slice(0, 7);
+  const slicedDatas = data.data.slice(0, 9);
 
   slicedDatas.forEach((a) => {
     displayBooks.innerHTML += `
@@ -76,6 +76,8 @@ const getData = async () => {
         <td>${a.title}</td>
         <td>${a.author}</td>
         <td>${a.available}</td>
+        <td>${a.pages}</td>
+
       </tr>
       `;
   });
