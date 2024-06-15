@@ -49,7 +49,7 @@ const getUserData = async () => {
   const displayUserList = document.getElementById("tableBody");
   const userData = await response.json();
   // console.log(userData);
-  const sliceUserData = userData.data.slice(0, 7);
+  const sliceUserData = userData.data.slice(0, 8);
   console.log(sliceUserData);
   sliceUserData.forEach((user) => {
     displayUserList.innerHTML += `
