@@ -271,7 +271,8 @@ td {
 }
 .userNameAvatar {
   display: flex;
-  justify-content: space-around;
+  gap: 15px;
+  /* justify-content: space-around; */
   /* text-align: justify; */
 }
 img {
