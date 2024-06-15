@@ -96,7 +96,22 @@ setInterval(() => {
 
 const getUserData = async () => {
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/users");
+  const displayUserList = document.getElementById("tableBody");
+  const userData = await response.json();
+  // console.log(userData);
+  const sliceUserData = userData.data.slice(0, 7);
+  console.log(sliceUserData);
+  sliceUserData.forEach((user) => {
+    displayUserList.innerHTML += `
+    <tr>
+        <td>${user.id}</td>
+        <td>${user.name}</td>
+        <td>${user.email}</td>
+      </tr>
+    `;
+  });
 };
+getUserData();
 const getData = async () => {
   const response = await fetch("https://lms.sachetsubedi001.com.np/api/books");
   const displayBooks = document.getElementById("tableBody2");
@@ -107,7 +122,7 @@ const getData = async () => {
   slicedDatas.forEach((a) => {
     displayBooks.innerHTML += `
       <tr>
-        <td>${a.title}</td>
+        <td>${a.avatar}</td>
         <td>${a.author}</td>
         <td>${a.pages}</td>
       </tr>
