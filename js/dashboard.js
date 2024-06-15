@@ -54,8 +54,9 @@ const getUserData = async () => {
   sliceUserData.forEach((user) => {
     displayUserList.innerHTML += `
     <tr>
-
-        <td>${user.name}</td>
+        <td class="userNameAvatar"> 
+        <img src=${user.avatar}>
+        ${user.name}</td>
         <td>${user.email}</td>
       </tr>
     `;

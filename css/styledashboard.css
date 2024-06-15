@@ -269,3 +269,14 @@ td {
   cursor: pointer;
   transform: scale(1.1);
 }
+.userNameAvatar {
+  display: flex;
+  justify-content: space-around;
+  /* text-align: justify; */
+}
+img {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
