@@ -104,6 +104,7 @@ const getUserData = async () => {
   sliceUserData.forEach((user) => {
     displayUserList.innerHTML += `
     <tr>
+        <td>${user.id}</td>
         <td>${user.name}</td>
         <td>${user.email}</td>
       </tr>
@@ -121,8 +122,9 @@ const getData = async () => {
   slicedDatas.forEach((a) => {
     displayBooks.innerHTML += `
       <tr>
+        <td>${a.title}</td>
         <td>${a.author}</td>
-        <td>${a.pages}</td>
+        <td>${a.available}</td>
       </tr>
       `;
   });
