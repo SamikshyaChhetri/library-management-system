@@ -2,15 +2,35 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+.wrap {
+  /* display: flex; */
+}
 .container {
   display: flex;
   justify-content: space-around;
+  background-color: rgba(214, 214, 214, 0.618);
+  border-radius: 10px;
+  padding: 1em;
+  gap: 1em;
 }
 
 .details {
   display: flex;
   justify-content: space-between;
+  gap: 1em;
+  background-color: rgba(137, 43, 226, 0.925);
+  padding: 2em;
+  border-radius: 10px;
+  color: white;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+input {
+  display: flex;
 }
 .imageDetails {
   background-color: rgba(137, 43, 226, 0.925);
