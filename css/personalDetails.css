@@ -4,10 +4,28 @@
 }
 .container {
   display: flex;
+  justify-content: space-around;
+}
+
+.details {
+  display: flex;
   justify-content: space-between;
+}
+.imageDetails {
+  background-color: rgba(137, 43, 226, 0.925);
+  padding: 2em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .myImage img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.type {
+  text-align: center;
+  color: white;
 }
