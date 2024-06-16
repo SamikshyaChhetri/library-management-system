@@ -10,7 +10,6 @@
   background-color: rgba(242, 242, 242, 0.618);
   justify-content: center;
   border-radius: 10px;
-  /* padding: 1em; */
   gap: 1em;
   align-items: center;
   width: 100%;
@@ -37,7 +36,6 @@
   padding: 2em 1em;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   background-color: rgba(137, 43, 226, 0.925);
   background-image: radial-gradient(
       circle at 44% 9%,
@@ -106,7 +104,6 @@
 
   border-radius: 10px;
   justify-content: space-between;
-  /* why is this center? */
   color: rgb(0, 0, 0);
   width: 50%;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -122,15 +119,13 @@ label {
   flex-direction: column;
   text-align: justify;
   gap: 20px;
-  width: 100%; /* width deko maile yo*/
+  width: 100%;
 }
 .userInfo {
   display: flex;
   flex-direction: column;
 }
-/* input dine box ma width alik dher dina khojeko vayena k 
-kasari badham k width hudai vayena....?helooooo aee  herethina, pakha mathi xa inputclass tya ni deko xu width vayoo
-*/
+
 .inputClass {
   width: 90%;
 }
