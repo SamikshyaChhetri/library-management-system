@@ -3,7 +3,9 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .wrap {
-  /* display: flex; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container {
   display: flex;
@@ -12,6 +14,7 @@
   border-radius: 10px;
   padding: 1em;
   gap: 1em;
+  align-items: center;
 }
 
 .details {
@@ -31,10 +34,12 @@
 }
 input {
   display: flex;
+  flex-direction: column;
 }
 .imageDetails {
   background-color: rgba(137, 43, 226, 0.925);
-  padding: 2em;
+  padding: 1em;
+  height: 150px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
