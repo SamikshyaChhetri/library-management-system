@@ -2,11 +2,7 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-body {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
+
 .container {
   display: flex;
   justify-content: space-around;
@@ -23,12 +19,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-.myImage img {
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
 .type {
   text-align: center;
