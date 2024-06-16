@@ -27,7 +27,17 @@
 .inputClass:focus {
   outline: 0.8px solid rgba(137, 43, 226, 0.901);
 }
-
+.selectCountry {
+  font-size: 15px;
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+  margin-top: 5px;
+  border: 0.8px solid rgba(159, 78, 234, 0.748);
+}
+.selectCountry:focus {
+  outline: 0.8px solid rgba(137, 43, 226, 0.901);
+}
 .details {
   display: flex;
   gap: 2em;
