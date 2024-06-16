@@ -10,7 +10,8 @@
 .container {
   display: flex;
   /* justify-content: space-around; */
-  background-color: rgba(214, 214, 214, 0.618);
+  background-color: rgba(242, 242, 242, 0.618);
+
   border-radius: 10px;
   padding: 1em;
   gap: 1em;
@@ -21,9 +22,14 @@
 input[type="text"],
 input[type="number"] {
   font-size: 20px;
-  width: 100%;
+  /* width: 100%; */
+  border: 1px solid blueviolet;
   height: 25px;
+  padding: 6px 20px 6px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
 }
+
 .details {
   display: flex;
   gap: 2em;
@@ -34,13 +40,82 @@ input[type="number"] {
   flex-direction: column;
   align-items: center;
   background-color: rgba(137, 43, 226, 0.925);
+  background-image: radial-gradient(
+      circle at 44% 9%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 74%,
+      transparent 74%,
+      transparent 83%,
+      transparent 83%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 0% 23%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 8%,
+      transparent 8%,
+      transparent 69%,
+      transparent 69%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 87% 35%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 10%,
+      transparent 10%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 22% 7%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 16%,
+      transparent 16%,
+      transparent 88%,
+      transparent 88%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 37% 26%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 7%,
+      transparent 7%,
+      transparent 9%,
+      transparent 9%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 86% 59%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 77%,
+      transparent 77%,
+      transparent 95%,
+      transparent 95%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 83%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 35%,
+      transparent 35%,
+      transparent 86%,
+      transparent 86%,
+      transparent 100%
+    ),
+    linear-gradient(0deg, hsl(279, 0%, 100%), hsl(279, 0%, 100%));
+
   border-radius: 10px;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
   width: 50%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 label {
-  padding: 1em;
+  /* padding: 1em; */
+  text-align: justify;
+  font-size: 17px;
+  color: rgba(37, 37, 37, 0.75);
 }
 .left,
 .right {
@@ -54,7 +129,72 @@ input {
   flex-direction: column;
 }
 .imageDetails {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: rgba(137, 43, 226, 0.925);
+  background-image: radial-gradient(
+      circle at 44% 9%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 74%,
+      transparent 74%,
+      transparent 83%,
+      transparent 83%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 0% 23%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 8%,
+      transparent 8%,
+      transparent 69%,
+      transparent 69%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 87% 35%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 10%,
+      transparent 10%,
+      transparent 61%,
+      transparent 61%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 22% 7%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 16%,
+      transparent 16%,
+      transparent 88%,
+      transparent 88%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 37% 26%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 7%,
+      transparent 7%,
+      transparent 9%,
+      transparent 9%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 86% 59%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 77%,
+      transparent 77%,
+      transparent 95%,
+      transparent 95%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 75% 83%,
+      hsla(153, 0%, 47%, 0.05) 0%,
+      hsla(153, 0%, 47%, 0.05) 35%,
+      transparent 35%,
+      transparent 86%,
+      transparent 86%,
+      transparent 100%
+    ),
+    linear-gradient(0deg, hsl(279, 0%, 100%), hsl(279, 0%, 100%));
   padding: 1em;
   height: 150px;
   width: 150px;
@@ -75,6 +215,32 @@ input {
 }
 .type {
   text-align: center;
-  color: rgba(255, 255, 255, 0.872);
   font-size: 10px;
+  color: rgba(0, 0, 0, 0.67);
+}
+.imageType {
+  padding-top: 10px;
+}
+.saveContainer {
+  position: relative;
+  width: 80%;
+  height: 100px;
+}
+
+.save {
+  position: absolute;
+  bottom: 2em;
+  right: 0;
+  color: white;
+  cursor: pointer;
+  padding: 0.8em 1.5em;
+  border-radius: 10px;
+  background-color: blueviolet;
+}
+
+.save:hover {
+  background-color: rgba(254, 250, 250, 0.763);
+  color: rgb(0, 0, 0);
+
+  transition: 0.3s ease-in-out;
 }
