@@ -9,6 +9,7 @@ body {
 .logo img {
   width: 80px;
 }
+
 .wrap1 {
   display: flex;
   justify-content: space-around;

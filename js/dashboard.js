@@ -139,8 +139,10 @@ logOut.addEventListener("click", () => {
   localStorage.removeItem("token");
   window.location.href = "../pages/login.html";
 });
-const gotoprofile = document
-  .getElementById("profile")
-  .addEventListener("click", () => {
-    window.location.href = "../pages/profile.html";
-  });
+document.getElementById("profile").addEventListener("click", () => {
+  return (window.location.href = "../pages/profile.html");
+});
+
+document.getElementById("setting").addEventListener("click", () => {
+  return (window.location.href = "../pages/personalDetails.html");
+});

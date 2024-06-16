@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit your details</title>
     <link rel="stylesheet" href="../css/personalDetails.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="wrap">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="3300">
         <div class="imageDetails">
           <div class="imageContainer">
             <img src="../images/samu.png" alt="" />
@@ -72,7 +73,6 @@
                   <option value="Argentina">Argentina</option>
                   <option value="spain">Spain</option>
                 </select>
-                <!-- <input type="text" class="inputClass" /> -->
               </div>
             </div>
           </div>
@@ -82,5 +82,9 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
