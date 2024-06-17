@@ -1,5 +1,5 @@
 function toast(a, color) {
-  const toastMessage = document.getElementById("toast");
+  const toastMessage = document.getElementById("toast"); // yah hera k lai gareuxau
   const scrollHeight = window.scrollY;
   if (scrollHeight >= 0) {
     toastMessage.style.top = scrollHeight + 10 + "px";
@@ -10,9 +10,7 @@ function toast(a, color) {
 }
 function removetoast() {
   setTimeout(() => {
-    const toastMessage = document.getElementById("toast");
-    toastMessage.style.top = "-50px";
+    const toastMessage = document.getElementById("toast"); // yai xa ta
+    toastMessage.style.top = "-100vh"; // jabo 50x dine hora vanyavh
   }, 2000);
-  const displayDetails = document.getElementById("wrapContent");
-  displayDetails.style.top = "-100vh";
 }
