@@ -29,16 +29,17 @@
 }
 .selectCountry {
   font-size: 15px;
-  width: 90%;
+  width: 96%;
   border-radius: 10px;
-  /* height: 25px; */
+  height: 35px;
   margin-top: 5px;
   padding: 6px 10px 6px 10px;
   border: 0.8px solid rgba(159, 78, 234, 0.748);
 }
-option {
-  height: 25px;
-  padding: 6px 10px 6px 10px;
+.countryName {
+  position: absolute;
+  left: 12px;
+  bottom: 27px;
 }
 .selectCountry:focus {
   outline: 0.8px solid rgba(137, 43, 226, 0.901);
@@ -52,7 +53,6 @@ option {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.925);
-  /* position: relative; */
   border-radius: 10px;
   justify-content: space-between;
   color: rgb(0, 0, 0);
@@ -68,7 +68,6 @@ label {
   padding: 2px;
   left: 12px;
   bottom: 30px;
-  /* top: 100px; */
 }
 .left,
 .right {
@@ -77,18 +76,12 @@ label {
   text-align: justify;
   gap: 20px;
   width: 100%;
-  /* position: relative; */
 }
 .userInfo {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-
-/* .inputClass {
-  width: 90%;
-
-} */
 
 /* align the button */
 .imageDetails {
