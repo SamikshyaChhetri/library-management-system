@@ -14,7 +14,6 @@ const fetchData = async () => {
   document.getElementById("zipcode").value = data.data.zip;
   document.getElementById("countryId").value = data.data.country;
 };
-
 fetchData();
 const fullName = document.getElementById("name").value;
 const phoneNumber = document.getElementById("phoneNum").value;
