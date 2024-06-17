@@ -33,5 +33,17 @@ document.getElementById("saveChanges").addEventListener("click", async (e) => {
     }
   );
   const data = await response.json();
+  console.log(response.status);
+  if (response.status == 201) {
+    toast("Successfully Updated", "limegreen");
+    removetoast();
+  } else if (response.status == 400) {
+    toast("User not found", "red");
+    removetoast();
+  } else {
+    toast("Server Error", "red");
+    removetoast();
+  }
+
   console.log(data);
 });
