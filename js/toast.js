@@ -10,7 +10,7 @@ function toast(a, color) {
 }
 function removetoast() {
   setTimeout(() => {
-    const toastMessage = document.getElementById("toast"); // yai xa ta
-    toastMessage.style.top = "-100vh"; // jabo 50x dine hora vanyavh
+    const toastMessage = document.getElementById("toast");
+    toastMessage.style.top = "-100vh";
   }, 2000);
 }
