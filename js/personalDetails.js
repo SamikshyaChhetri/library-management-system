@@ -5,6 +5,16 @@ const apartmentName = document.getElementById("apartment").value;
 const cityName = document.getElementById("city").value;
 const stateName = document.getElementById("state").value;
 const zipCode = document.getElementById("zipcode").value;
-document
-  .getElementById("saveChanges")
-  .addEventListener("click", async () => {});
+const countryName = document.getElementById("countryId").value;
+document.getElementById("saveChanges").addEventListener("click", async (e) => {
+  e.preventDefault();
+  const dataPass = {
+    name: fullName,
+    phone: phoneNumber,
+    apartment: apartmentName,
+    city: cityName,
+    state: stateName,
+    zip: zipCode,
+    countrt: countryName,
+  };
+});
