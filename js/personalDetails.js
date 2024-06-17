@@ -8,19 +8,23 @@ document.getElementById("saveChanges").addEventListener("click", async (e) => {
   const stateName = document.getElementById("state").value;
   const zipCode = document.getElementById("zipcode").value;
   const countryName = document.getElementById("countryId").value;
+  const useridfromlocalstorage = localStorage.getItem("userid");
+  console.log(useridfromlocalstorage);
   const dataPass = {
+    id: useridfromlocalstorage,
     name: fullName,
     phone: phoneNumber,
     apartment: apartmentName,
     city: cityName,
+    street: streetName,
     state: stateName,
     zip: zipCode,
-    countrt: countryName,
+    country: countryName,
   };
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/users/",
     {
-      method: "patch",
+      method: "PATCH",
       body: JSON.stringify(dataPass),
       headers: {
         "Content-Type": "application/json",
