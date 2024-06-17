@@ -1,15 +1,16 @@
+const fullName = document.getElementById("name").value;
+const phoneNumber = document.getElementById("phoneNum").value;
+const emailName = document.getElementById("email").value;
+const apartmentName = document.getElementById("apartment").value;
+const cityName = document.getElementById("city").value;
+const stateName = document.getElementById("state").value;
+const zipCode = document.getElementById("zipcode").value;
+const countryName = document.getElementById("countryId").value;
+const useridfromlocalstorage = localStorage.getItem("userid");
+const saveChanges = document.getElementById("saveChanges");
 document.getElementById("saveChanges").addEventListener("click", async (e) => {
   e.preventDefault();
-  const fullName = document.getElementById("name").value;
-  const phoneNumber = document.getElementById("phoneNum").value;
-  const emailName = document.getElementById("email").value;
-  const apartmentName = document.getElementById("apartment").value;
-  const cityName = document.getElementById("city").value;
-  const stateName = document.getElementById("state").value;
-  const zipCode = document.getElementById("zipcode").value;
-  const countryName = document.getElementById("countryId").value;
-  const useridfromlocalstorage = localStorage.getItem("userid");
-
+  saveChanges.innerHTML = "Updating...";
   const dataPass = {
     id: useridfromlocalstorage,
     name: fullName,
@@ -21,7 +22,7 @@ document.getElementById("saveChanges").addEventListener("click", async (e) => {
     zip: zipCode,
     country: countryName,
   };
-  console.log(dataPass);
+  // console.log(dataPass);
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/users/update",
     {
@@ -37,13 +38,16 @@ document.getElementById("saveChanges").addEventListener("click", async (e) => {
   if (response.status == 201) {
     toast("Successfully Updated", "limegreen");
     removetoast();
+    saveChanges.innerHTML = "Save changes";
   } else if (response.status == 400) {
     toast("User not found", "red");
     removetoast();
+    saveChanges.innerHTML = "Save changes";
   } else {
     toast("Server Error", "red");
     removetoast();
+    saveChanges.innerHTML = "Save changes";
   }
 
-  console.log(data);
+  // console.log(data);
 });
