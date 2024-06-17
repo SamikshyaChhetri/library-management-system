@@ -14,6 +14,7 @@ const fetchData = async () => {
   document.getElementById("zipcode").value = data.data.zip;
   document.getElementById("countryId").value = data.data.country;
 };
+
 fetchData();
 
 // mero id bata login gara ta, saab ko value aauxa

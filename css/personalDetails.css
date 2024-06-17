@@ -24,9 +24,7 @@
   border-radius: 10px;
   margin-top: 5px;
 }
-.inputClass:focus {
-  outline: 0.8px solid rgba(137, 43, 226, 0.901);
-}
+
 .selectCountry {
   font-size: 15px;
   width: 96%;
