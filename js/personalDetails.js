@@ -16,8 +16,6 @@ const fetchData = async () => {
 };
 
 fetchData();
-
-// mero id bata login gara ta, saab ko value aauxa
 const fullName = document.getElementById("name").value;
 const phoneNumber = document.getElementById("phoneNum").value;
 const emailName = document.getElementById("email").value;
@@ -76,7 +74,4 @@ saveChanges.addEventListener("click", async (e) => {
     }, 1000);
     saveChanges.innerHTML = "Update";
   }
-
-  // console.log(data);
 });
-// gara aba yo, nindra lagyo malai ta xya malai ta kaha bata k garne thaha paina, yesto k, pahila log in gareko user ko details magne, tesma hamro form ma vako jati sabai details aauxa, ani ityo sabai yo form ham haldine so that tei ma edit garna milos api kun hota, postman ma xa khoja na, sabai vandiye vane jandainau timi list? list vabeko list dine ho, vaneko all user, retrive vaneko single user ko dine eaaaa retrive ho vanesi, yes, gara na ta, page load hune bittikai fetch huna pary, ani tyo input haru ma hallina paryo
