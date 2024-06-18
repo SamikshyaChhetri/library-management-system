@@ -54,7 +54,7 @@ const reservedBooks = async () => {
       setTimeout(() => {
         location.reload();
       }, 1500);
-      toast("Book Returned", "green");
+      toast("Book Returned", "limegreen");
 
       console.log(data);
     });
