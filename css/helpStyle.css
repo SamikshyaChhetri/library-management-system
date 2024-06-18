@@ -76,7 +76,7 @@ span {
 .styletitle {
   font-weight: bold;
 }
-.mainDashboard {
+.main {
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -91,4 +91,9 @@ span {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+.bookText {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
