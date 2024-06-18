@@ -1,5 +1,5 @@
 function toast(a, color) {
-  const toastMessage = document.getElementById("toast"); // yah hera k lai gareuxau
+  const toastMessage = document.getElementById("toast");
   const scrollHeight = window.scrollY;
   if (scrollHeight >= 0) {
     toastMessage.style.top = scrollHeight + 10 + "px";
