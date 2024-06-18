@@ -4,7 +4,7 @@ const fetchData = async () => {
     "https://lms.sachetsubedi001.com.np/api/auth/user/" + useridfromlocalstorage
   );
   const data = await response.json();
-  console.log(data); //herdai gara k k naam xa
+  console.log(data);
   document.getElementById("name").value = data.data.name;
   document.getElementById("phoneNum").value = data.data.phone;
   document.getElementById("email").value = data.data.email;

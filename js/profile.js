@@ -1,3 +1,6 @@
+document.getElementById("editPersonalDetails").addEventListener("click", () => {
+  window.location.href = "../pages/personalDetails.html";
+});
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
   window.location.href = "../pages/login.html";
