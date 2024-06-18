@@ -35,6 +35,7 @@
   margin-top: 5px;
   padding: 6px 10px 6px 10px;
   border: 0.8px solid rgba(159, 78, 234, 0.748);
+  background-color: white;
 }
 .countryName {
   position: absolute;
