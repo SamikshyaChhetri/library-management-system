@@ -50,7 +50,7 @@ submit_msg.addEventListener("click", async (e) => {
   console.log(response.status);
   submit_msg.innerHTML = "Login";
   if (response.status == "200") {
-    toast("Successfully signed in", "green");
+    toast("Successfully signed in", "limegreen");
     removetoast();
     localStorage.setItem("token", data.data.token);
     localStorage.setItem("userid", data.data.user.id);
