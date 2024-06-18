@@ -29,52 +29,60 @@ saveChanges.addEventListener("click", async (e) => {
   const stateName = document.getElementById("state").value;
   const zipCode = document.getElementById("zipcode").value;
   const countryName = document.getElementById("countryId").value;
-
-  saveChanges.innerHTML = "Updating...";
-  const dataPass = {
-    id: useridfromlocalstorage,
-    name: fullName,
-    phone: phoneNumber,
-    apartment: apartmentName,
-    email: emailName,
-    city: cityName,
-    state: stateName,
-    zip: zipCode,
-    country: countryName,
-  };
-  // console.log(dataPass);
-  const response = await fetch(
-    "https://lms.sachetsubedi001.com.np/api/users/update",
-    {
-      method: "POST",
-      body: JSON.stringify(dataPass),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
-  const data = await response.json();
-  console.log(response.status);
-  if (response.status == 201) {
-    toast("Successfully Updated", "limegreen");
-    removetoast();
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
-    saveChanges.innerHTML = "Update";
-  } else if (response.status == 400) {
-    toast("User not found", "red");
-    removetoast();
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
-    saveChanges.innerHTML = "Update";
+  if (fullName == "" && emailName == "") {
+    toast("fill Name and Email field", "red");
+  } else if (fullName == "") {
+    toast("Fill Name field", "red");
+  } else if (emailName == "") {
+    toast("Fill Email field", "red");
   } else {
-    toast("Server Error", "red");
-    removetoast();
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
-    saveChanges.innerHTML = "Update";
+    saveChanges.innerHTML = "Updating...";
+    const dataPass = {
+      id: useridfromlocalstorage,
+      name: fullName,
+      phone: phoneNumber,
+      apartment: apartmentName,
+      email: emailName,
+      city: cityName,
+      state: stateName,
+      zip: zipCode,
+      country: countryName,
+    };
+
+    // console.log(dataPass);
+    const response = await fetch(
+      "https://lms.sachetsubedi001.com.np/api/users/update",
+      {
+        method: "POST",
+        body: JSON.stringify(dataPass),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(response.status);
+    if (response.status == 201) {
+      toast("Successfully Updated", "limegreen");
+      removetoast();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+      saveChanges.innerHTML = "Update";
+    } else if (response.status == 400) {
+      toast("User not found", "red");
+      removetoast();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+      saveChanges.innerHTML = "Update";
+    } else {
+      toast("Server Error", "red");
+      removetoast();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+      saveChanges.innerHTML = "Update";
+    }
   }
 });
