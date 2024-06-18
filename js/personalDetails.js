@@ -13,6 +13,8 @@ const fetchData = async () => {
   document.getElementById("state").value = data.data.state;
   document.getElementById("zipcode").value = data.data.zip;
   document.getElementById("countryId").value = data.data.country;
+  const userImage = document.getElementById("avatarimg");
+  userImage.setAttribute("src", data.data.avatar);
 };
 fetchData();
 const saveChanges = document.getElementById("saveChanges");
