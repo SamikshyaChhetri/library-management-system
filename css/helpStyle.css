@@ -80,12 +80,12 @@ span {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  gap: 0.5em;
+  gap: 2em;
 }
 .navigationMenu {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2em;
 }
 .navButton {
   display: flex;
