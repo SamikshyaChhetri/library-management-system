@@ -62,7 +62,7 @@ submitBooks.addEventListener("click", async (e) => {
 
     submitBooks.innerHTML = "Submit";
     if (response.status == 201) {
-      toast("Book added successfully", "green");
+      toast("Book added successfully", "limegreen");
       removetoast();
     } else {
       toast("Error occured", "red");
