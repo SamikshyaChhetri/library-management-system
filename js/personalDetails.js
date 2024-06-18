@@ -30,11 +30,14 @@ saveChanges.addEventListener("click", async (e) => {
   const zipCode = document.getElementById("zipcode").value;
   const countryName = document.getElementById("countryId").value;
   if (fullName == "" && emailName == "") {
-    toast("fill Name and Email field", "red");
+    toast("Please provide valid Name and Email", "red");
+    removetoast();
   } else if (fullName == "") {
-    toast("Fill Name field", "red");
+    toast("Please provide valid Name", "red");
+    removetoast();
   } else if (emailName == "") {
-    toast("Fill Email field", "red");
+    toast("Please provide valid Email", "red");
+    removetoast();
   } else {
     saveChanges.innerHTML = "Updating...";
     const dataPass = {
