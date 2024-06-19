@@ -102,7 +102,6 @@ span {
 #icon3:hover {
   color: blueviolet;
   cursor: pointer;
-  transform: scale(1.2);
 }
 .loginRegister {
   display: none;
