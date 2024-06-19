@@ -13,8 +13,8 @@ const fetchData = async () => {
   document.getElementById("state").value = data.data.state;
   document.getElementById("zipcode").value = data.data.zip;
   document.getElementById("countryId").value = data.data.country;
-  const userImage = document.getElementById("avatarimg"); // tei image tag lai grab garera tesko src haleko
-  userImage.setAttribute("src", data.data.avatar); // yah bata
+  const userImage = document.getElementById("avatarimg");
+  userImage.setAttribute("src", data.data.avatar);
 };
 fetchData();
 
