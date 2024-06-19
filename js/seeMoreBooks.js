@@ -79,6 +79,7 @@ reserveBook.addEventListener("click", async () => {
   reserveBook.innerHTML = "Creating a Reservation..";
   const userIdFromLocalstorage = localStorage.getItem("userid");
   const bookIdFromLocalstorage = localStorage.getItem("bookId");
+  const displayDetails = document.getElementById("wrapContent");
 
   // Create a request body object to send to teh backend
   const data_pass = {
@@ -105,16 +106,25 @@ reserveBook.addEventListener("click", async () => {
     toast("Book reservation created successfully", "limegreen");
     removetoast();
     reserveBook.innerHTML = "Reserve";
+    setTimeout(() => {
+      displayDetails.style.top = "-100vh";
+    }, 3000);
   } else if (response.status == 400) {
     toast("Book already reserved", "red");
     removetoast();
 
     reserveBook.innerHTML = "Reserve";
+    setTimeout(() => {
+      displayDetails.style.top = "-100vh";
+    }, 3000);
   } else {
     toast("Server Error", "red");
     removetoast();
 
     reserveBook.innerHTML = "Reserve";
+    setTimeout(() => {
+      displayDetails.style.top = "-100vh";
+    }, 3000);
   }
 });
 // Check if the user is logged in or not
