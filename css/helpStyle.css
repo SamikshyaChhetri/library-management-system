@@ -97,6 +97,13 @@ span {
   border-radius: 10px;
   margin-bottom: 2em;
 }
+#icon1,
+#icon2,
+#icon3 {
+  transform: rotate(0);
+  transition: 0.3s ease-in-out;
+}
+
 #icon1:hover,
 #icon2:hover,
 #icon3:hover {
@@ -129,10 +136,12 @@ span {
   font-weight: bold;
 }
 .main {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   text-align: justify;
   gap: 2em;
+  transition: 0.3s ease-in-out;
+  box-shadow: "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px";
 }
 .navigationMenu {
   display: flex;
