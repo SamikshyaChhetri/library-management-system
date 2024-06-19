@@ -108,6 +108,7 @@ input[type="text"] {
   padding: 1em;
   text-align: center;
   border-radius: 50px;
+  color: black;
 }
 .icon:hover {
   cursor: pointer;

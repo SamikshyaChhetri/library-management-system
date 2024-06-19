@@ -146,3 +146,7 @@ document.getElementById("profile").addEventListener("click", () => {
 document.getElementById("setting").addEventListener("click", () => {
   return (window.location.href = "../pages/personalDetails.html");
 });
+
+// document.getElementById("settingIcon").addEventListener("click", () => {
+//   window.location.href = "../pages/personalDetails.html";
+// });

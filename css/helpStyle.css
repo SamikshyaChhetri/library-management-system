@@ -17,7 +17,6 @@ span {
 .wrapContainer {
   display: flex;
   flex-direction: column;
-  /* height: 98vh; */
   background-image: radial-gradient(
       circle at 13% 47%,
       rgba(140, 140, 140, 0.03) 0%,
