@@ -19,7 +19,7 @@ span {
 }
 .wrapContainer {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   /* height: 98vh; */
   background-image: radial-gradient(
       circle at 13% 47%,
@@ -71,7 +71,9 @@ span {
       transparent 100%
     ),
     linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
-  /* height: 100vh; */
+}
+.bg {
+  height: 20vh;
 }
 .library {
   font-size: 40px;

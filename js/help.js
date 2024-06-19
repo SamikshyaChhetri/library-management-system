@@ -22,7 +22,7 @@ document.getElementById("icon2").addEventListener("click", () => {
   if (displayText.style.display == "none") {
     // If currently hidden, show the element
     displayText.style.display = "flex";
-    wrapdisplay.style.transition = "0.3s ease-in-out";
+    wrapdisplay.style.transition = "0.5s ease-in-out";
     wrapdisplay.style.boxShadow =
       "rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px";
   } else {
