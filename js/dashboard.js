@@ -50,7 +50,7 @@ const getUserData = async () => {
   const userData = await response.json();
   // console.log(userData);
   const sliceUserData = userData.data.slice(0, 8);
-  console.log(sliceUserData);
+  // console.log(sliceUserData);
   sliceUserData.forEach((user) => {
     displayUserList.innerHTML += `
     <tr>
@@ -102,7 +102,7 @@ async function fetchData() {
   const userImage = document.getElementById("myImage");
   userImage.setAttribute("src", data.data.avatar);
   userName.innerHTML = data.data.name;
-  console.log(data);
+  // console.log(data);
 }
 fetchData();
 const addBooks = document.getElementById("addBook");
@@ -147,6 +147,23 @@ document.getElementById("setting").addEventListener("click", () => {
   return (window.location.href = "../pages/personalDetails.html");
 });
 
-// document.getElementById("settingIcon").addEventListener("click", () => {
-//   window.location.href = "../pages/personalDetails.html";
-// });
+async function retriveData() {
+  useridfromlocalstorage = localStorage.getItem("userid");
+  const response = await fetch(
+    "https://lms.sachetsubedi001.com.np/api/dashboard-details/" +
+      useridfromlocalstorage,
+    {
+      method: "GET",
+    }
+  );
+  const data = await response.json();
+  console.log(data);
+  document.getElementById("totalVisitorsNumber").innerHTML =
+    data.data.totalVisits;
+  document.getElementById("borrowBooks").innerHTML =
+    data.data.borrowedBooksCount;
+  document.getElementById("totalBooks").innerHTML = data.data.totalBooksCount;
+
+  document.getElementById("userNumber").innerHTML = data.data.usersCount;
+}
+retriveData();

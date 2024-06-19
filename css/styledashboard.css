@@ -89,6 +89,7 @@ input[type="text"] {
   gap: 1em;
   font-size: larger;
   width: fit-content;
+  padding-top: 2em;
 }
 .main {
   display: flex;
@@ -137,6 +138,10 @@ input[type="text"] {
 }
 .common {
   padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
 .books {
   height: 8em;
