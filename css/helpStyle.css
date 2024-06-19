@@ -82,7 +82,7 @@ span {
   font-weight: bold;
 }
 .main {
-  display: flex;
+  display: none;
   flex-direction: column;
   text-align: justify;
   gap: 2em;
