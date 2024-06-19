@@ -24,23 +24,36 @@ document.getElementById("updateBtn").addEventListener("click", () => {
   document.getElementById("cancel").addEventListener("click", () => {
     displayContainer.style.top = "-100em";
   });
+
+  const saveButton = document.getElementById("savebtn");
+  saveButton.addEventListener("click", async () => {
+    saveButton.innerHTML = "Saving..";
+    const avatarInput = document.getElementById("avatarContainer");
+    console.log(avatarInput.files);
+    const newForm = new FormData();
+    newForm.append("avatar", avatarInput.files[0]);
+    newForm.append("id", useridfromlocalstorage);
+    const response = await fetch(
+      "https://lms.sachetsubedi001.com.np/api/users/photo",
+      {
+        method: "POST",
+        body: newForm,
+      }
+    );
+    console.log(await response.json());
+    // setTimeout(() => {
+    //   saveButton.innerHTML = "Save";
+    // }, 4000);
+    setTimeout(() => {
+      window.location.reload();
+    }, 5000);
+    // setTimeout(() => {
+    //   toast("Successfully Uploaded", "limegreen");
+    // }, 6000);
+    // saveButton.innerHTML = "Save";
+  });
 });
 
-document.getElementById("btn").addEventListener("click", async () => {
-  const avatarInput = document.getElementById("avatarContainer");
-  console.log(avatarInput.files);
-  const newForm = new FormData();
-  newForm.append("avatar", avatarInput.files[0]);
-  newForm.append("id", useridfromlocalstorage);
-  const response = await fetch(
-    "https://lms.sachetsubedi001.com.np/api/users/photo",
-    {
-      method: "POST",
-      body: newForm,
-    }
-  );
-  console.log(await response.json());
-});
 const saveChanges = document.getElementById("saveChanges");
 
 saveChanges.addEventListener("click", async (e) => {
