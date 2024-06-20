@@ -17,6 +17,22 @@ const fetchData = async () => {
   userImage.setAttribute("src", data.data.avatar);
 };
 fetchData();
+
+document.getElementById("btn").addEventListener("click", async () => {
+  const avatarInput = document.getElementById("avatarContainer");
+  console.log(avatarInput.files);
+  const newForm = new FormData();
+  newForm.append("avatar", avatarInput.files[0]);
+  newForm.append("id", useridfromlocalstorage);
+  const response = await fetch(
+    "https://lms.sachetsubedi001.com.np/api/users/photo",
+    {
+      method: "POST",
+      body: newForm,
+    }
+  );
+  console.log(await response.json());
+});
 const saveChanges = document.getElementById("saveChanges");
 
 saveChanges.addEventListener("click", async (e) => {
@@ -64,7 +80,7 @@ saveChanges.addEventListener("click", async (e) => {
       }
     );
     const data = await response.json();
-    console.log(response.status);
+    // console.log(response.status);
     if (response.status == 201) {
       toast("Successfully Updated", "limegreen");
       removetoast();

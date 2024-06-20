@@ -85,7 +85,7 @@ label {
 }
 
 /* align the button */
-.imageDetails {
+.imageContainer {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: rgba(137, 43, 226, 0.925);
   background-image: radial-gradient(
@@ -153,13 +153,13 @@ label {
     ),
     linear-gradient(0deg, hsl(279, 0%, 100%), hsl(279, 0%, 100%));
   padding: 1em;
-  height: 150px;
-  width: 150px;
+  /* width: fit-content; */
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
+
 .imageContainer {
   display: flex;
   justify-content: center;

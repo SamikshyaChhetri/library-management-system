@@ -11,12 +11,24 @@
   <body>
     <div class="wrap">
       <div class="container" data-aos="fade-down" data-aos-duration="3300" `>
-        <div class="imageDetails">
+        <div
+          class="imageDetails"
+          style="display: flex; flex-direction: column; gap: 1em"
+        >
           <div class="imageContainer">
             <img src="" alt="" id="avatarimg" />
           </div>
-          <div class="imageType type">Allowed .jpeg, .jpg, .png</div>
-          <div class="maxSize type">Max size of 3.1MB</div>
+
+          <div
+            class="file"
+            style="display: flex; flex-direction: column; gap: 10px"
+          >
+            <input type="file" id="avatarContainer" accept="image/*" />
+            <!-- accept = "image/"  accepsts only images-->
+            <button id="btn" style="width: fit-content">Submit</button>
+          </div>
+          <!-- <div class="imageType type">Allowed .jpeg, .jpg, .png</div> -->
+          <!-- <div class="maxSize type">Max size of 3.1MB</div> -->
         </div>
         <div class="wrapDetails">
           <div class="details">
@@ -74,6 +86,7 @@
           </div>
         </div>
       </div>
+
       <div
         id="toast"
         style="
