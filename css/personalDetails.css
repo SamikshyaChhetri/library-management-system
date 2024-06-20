@@ -170,6 +170,17 @@ label {
   width: 100px;
   border-radius: 50%;
 }
+.changeAvatar {
+  color: white;
+  background-color: rgb(133, 30, 229);
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+  border-radius: 10px;
+}
+.changeAvatar:hover {
+  background-color: rgba(119, 23, 208, 0.82);
+  cursor: pointer;
+}
 .type {
   text-align: center;
   font-size: 10px;
