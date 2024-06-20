@@ -17,12 +17,21 @@
         >
           <div class="imageContainer">
             <img src="" alt="" id="avatarimg" />
-            <!-- yah bata 
-             timle dekhaune haina k tyo kura kina dher dimag lagauna paryo, upload gardine, backenbd le aafai url banayera pathauxa, ani aafai tei setAttribute bata set hunxa, timle tya input mna halesi dekhaune haiuna, backend ma pathaune ho, ani tya bata aafai aauxa tyo image respoinse ma user ko details magda, ani aafai set hunxa
-             suta ma voli buujhaidiml;a naii nindra laxaina tmlai nindra lagexa? hya maile bujhina yo tala input sanga yo kasari link vayo k, wait, give me 10 mins
-            -->
           </div>
-          <div class="changeAvatar">Update Photo</div>
+          <div class="changeAvatar" id="updateBtn">Update Photo</div>
+          <div class="updateAvatarContainer">
+            <div class="file" id="wrapfile">
+              <input type="file" id="avatarContainer" accept="image/" />
+              <div
+                class="wrapBtn"
+                style="display: flex; justify-content: space-between"
+              >
+                <button id="btn">Save</button>
+                <div id="cancel">Cancel</div>
+              </div>
+            </div>
+          </div>
+
           <!-- <div
             class="file"
             style="display: flex; flex-direction: column; gap: 10px"

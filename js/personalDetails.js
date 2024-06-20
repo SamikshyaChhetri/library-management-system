@@ -18,6 +18,14 @@ const fetchData = async () => {
 };
 fetchData();
 
+document.getElementById("updateBtn").addEventListener("click", () => {
+  const displayContainer = document.getElementById("wrapfile");
+  displayContainer.style.top = "1.5em";
+  document.getElementById("cancel").addEventListener("click", () => {
+    displayContainer.style.top = "-100em";
+  });
+});
+
 document.getElementById("btn").addEventListener("click", async () => {
   const avatarInput = document.getElementById("avatarContainer");
   console.log(avatarInput.files);
