@@ -197,8 +197,8 @@ td {
 }
 .seeAllwrap {
   display: flex;
-  justify-content: flex-end;
   padding-top: 1em;
+  justify-content: flex-end;
 }
 .seeAllUsers {
   font-weight: bold;
