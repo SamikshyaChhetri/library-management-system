@@ -28,23 +28,8 @@ body {
   font-size: 20px;
   display: flex;
   justify-content: space-around;
-  gap: 3em;
   padding-top: 1em;
 }
-
-input[type="text"] {
-  padding: 0.6em 0.4em;
-  width: 20em;
-  text-align: left;
-  border-radius: 5px;
-  text-decoration: none;
-  outline: none;
-  border: 0.5px solid rgba(0, 0, 0, 0.791);
-}
-.input {
-  padding-top: 1em;
-}
-
 #dropdownMenu {
   font-size: 17px;
   margin-top: 10px;
