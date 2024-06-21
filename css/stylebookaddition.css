@@ -6,6 +6,16 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
+  flex-direction: column;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+  gap: 10px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
 }
 form {
   padding: 20px;
@@ -19,9 +29,24 @@ form {
   text-align: justify;
   height: 50vh;
 }
+a {
+  text-decoration: none;
+}
+.icon {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: rgb(163, 81, 241);
+  color: white;
+}
+.icon:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(0.9);
+  background-color: rgb(131, 5, 249);
+  color: white;
+}
 input {
-  /* padding: 5px 3px; */
-  /* width: 100%; */
   outline: none;
   font-size: 15px;
   border: 0.5px solid rgba(137, 43, 226, 0.748);

@@ -81,6 +81,8 @@ body {
       transparent 100%
     ),
     linear-gradient(to top, white 60%, rgb(144, 53, 229) 40%);
+}
+.wrapContainer {
   height: 100vh; /* Ensures the gradient covers the full viewport height */
   margin: 0; /* Removes default body margin */
   display: flex;
@@ -102,7 +104,29 @@ body {
   text-align: center;
   gap: 7em;
 }
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+  gap: 10px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
 
+.icon {
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  font-size: 17px;
+  color: white;
+}
+.icon:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(0.9);
+  background-color: rgb(131, 5, 249);
+  color: white;
+}
 img {
   border-radius: 50%;
   height: 170px;

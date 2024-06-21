@@ -7,47 +7,67 @@
     <title>Your profile</title>
     <link rel="stylesheet" href="../css/profileStyle.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="container" data-aos="fade-down" data-aos-duration="3300">
-      <div class="userProfile">
-        <div class="pfp">
-          <img src="" id="myImage" alt="" />
+    <div class="nav">
+      <a href="dashboard.html">
+        <div class="icon">
+          <i class="fa fa-home" aria-hidden="true"></i> Home
         </div>
-      </div>
-      <div class="info">
-        <div class="userName" id="yourName"></div>
-        <div class="email" id="yourEmail"></div>
-      </div>
-      <div class="wrap">
-        <div class="generalwrap">
-          <div class="general">General</div>
-          <div class="line"></div>
-          <div class="generalDetail details">Personal Details</div>
-          <div class="textWrap">
-            <div class="text">View and edit your personal details</div>
-            <div class="edit" id="editPersonalDetails">Edit</div>
-          </div>
-          <div class="BookDetail details">Books</div>
-          <div class="textWrap">
-            <div class="text">View and manage reserved books</div>
-            <a href="../pages/manageBooks.html" class="manage">Manage</a>
-          </div>
+      </a>
+      <a href="help.html">
+        <div class="icon">
+          <i class="fa fa-question" aria-hidden="true"></i> Help
         </div>
+      </a>
+    </div>
 
-        <div class="securitywrap">
-          <div class="security">Security</div>
-          <div class="line"></div>
-          <div class="securityDetails details">Security Details</div>
-          <div class="textWrap">
-            <div class="text">
-              Manage your credentials, recovery methods and security details
+    <div class="wrapContainer">
+      <div class="container" data-aos="fade-down" data-aos-duration="3300">
+        <div class="userProfile">
+          <div class="pfp">
+            <img src="" id="myImage" alt="" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="userName" id="yourName"></div>
+          <div class="email" id="yourEmail"></div>
+        </div>
+        <div class="wrap">
+          <div class="generalwrap">
+            <div class="general">General</div>
+            <div class="line"></div>
+            <div class="generalDetail details">Personal Details</div>
+            <div class="textWrap">
+              <div class="text">View and edit your personal details</div>
+              <div class="edit" id="editPersonalDetails">Edit</div>
             </div>
-            <div class="edit">Edit</div>
+            <div class="BookDetail details">Books</div>
+            <div class="textWrap">
+              <div class="text">View and manage reserved books</div>
+              <a href="../pages/manageBooks.html" class="manage">Manage</a>
+            </div>
+          </div>
+
+          <div class="securitywrap">
+            <div class="security">Security</div>
+            <div class="line"></div>
+            <div class="securityDetails details">Security Details</div>
+            <div class="textWrap">
+              <div class="text">
+                Manage your credentials, recovery methods and security details
+              </div>
+              <div class="edit">Edit</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
