@@ -108,7 +108,7 @@ img {
   height: 170px;
   border: 8px solid white;
   margin: auto;
-  width: fit-content;
+  width: 170px;
 }
 .pfp {
   color: white;
