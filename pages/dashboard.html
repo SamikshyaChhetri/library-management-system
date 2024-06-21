@@ -138,43 +138,64 @@
             </div>
           </div>
         </div>
-
         <div class="lists">
           <div class="userlist" data-aos="fade-right" data-aos-duration="3300">
             User Lists
-            <table>
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody id="tableBody"></tbody>
-            </table>
-            <div class="seeAllwrap">
-              <div class="seeAllUsers">See all</div>
+            <div
+              style="
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              "
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+              </table>
+              <div class="seeAllwrap" style="padding: 1em 0">
+                <div class="seeAllUsers">See all</div>
+              </div>
             </div>
           </div>
+          <!-- Books table section -->
           <div class="userlist" data-aos="fade-left" data-aos-duration="3300">
             Books List
-            <table>
-              <thead>
-                <tr>
-                  <th>Title</th>
-                  <th>Author</th>
-                  <th>Available</th>
-                  <th>Pages</th>
-                </tr>
-              </thead>
-              <tbody id="tableBody2"></tbody>
-            </table>
-            <div class="seemore_wrap">
-              <div class="addBookButton">
-                <button id="addBook">Add Books</button>
+            <!--Books Table -->
+            <div
+              class="tableWarpper"
+              style="
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+              "
+            >
+              <table>
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Available</th>
+                    <th>Pages</th>
+                  </tr>
+                </thead>
+                <tbody id="tableBody2"></tbody>
+              </table>
+              <!-- Bottom buttons -->
+              <div class="seemore_wrap">
+                <div class="addBookButton">
+                  <button id="addBook">Add Books</button>
+                </div>
+                <a href="seeMoreBooks.html" style="text-decoration: none">
+                  <div class="seeMore see" id="seeMorebooks">See all</div>
+                </a>
               </div>
-              <a href="seeMoreBooks.html" style="text-decoration: none">
-                <div class="seeMore see" id="seeMorebooks">See all</div>
-              </a>
             </div>
           </div>
         </div>

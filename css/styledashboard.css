@@ -66,9 +66,7 @@ body {
   background-color: rgb(197, 0, 0);
   border-radius: 50%;
 }
-.bell {
-  font-size: 30px;
-}
+
 .logos {
   display: flex;
   flex-direction: column;
@@ -96,13 +94,14 @@ body {
   text-align: center;
   border-radius: 50px;
   color: black;
+  transition: 0.3s ease-in-out;
 }
 .icon:hover {
   cursor: pointer;
   background-color: rgba(137, 43, 226, 0.788);
   color: white;
   border-radius: 50px;
-  transition: 0.3s ease-in-out;
+  transform: scale(0.96);
 }
 .wrap3 {
   width: 100%;
@@ -183,6 +182,7 @@ th {
   font-family: sans-serif;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  min-height: 30em;
 }
 table {
   width: 100%;
@@ -192,6 +192,7 @@ td {
   font-size: smaller;
   font-weight: normal;
   padding: 1em;
+  height: 1.5em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.205);
   color: rgba(0, 0, 0, 0.742);
 }
@@ -207,25 +208,28 @@ td {
   width: fit-content;
   padding: 10px;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 .seeAllUsers:hover {
   color: white;
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  transform: scale(0.96);
 }
 .seemore_wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 1em;
+  padding: 1em 0;
 }
+/* vayo  */
 .seeMore {
   font-weight: bold;
   font-size: large;
   color: rgba(137, 43, 226, 0.788);
   padding: 10px;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 
 .seeMore:hover {
@@ -233,7 +237,7 @@ td {
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  transform: scale(0.96);
 }
 #addBook {
   border: none;
@@ -243,31 +247,34 @@ td {
   color: rgba(137, 43, 226, 0.788);
   padding: 10px;
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
 #addBook:hover {
   color: white;
   cursor: pointer;
   background-color: blueviolet;
   border-radius: 10px;
-  transition: 0.3s ease-in-out;
+  transform: scale(0.96);
 }
+
 #myImage {
   height: 50px;
   /* width: 40px; */
   border-radius: 50%;
   margin-right: 1em;
   border: 2px solid gray;
+  transition: 0.3s ease-in-out;
 }
 #myImage:hover {
   cursor: pointer;
   transform: scale(1.1);
-  transition: 0.3s ease-in-out;
 }
 .userNameAvatar {
   display: flex;
   gap: 12px;
   align-items: center;
 }
+
 .avatar {
   height: 22px;
   width: 22px;

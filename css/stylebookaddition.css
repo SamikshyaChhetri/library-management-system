@@ -39,10 +39,10 @@ a {
   font-size: 17px;
   background-color: rgb(163, 81, 241);
   color: white;
+  transition: 0.3s ease-in-out;
 }
 .icon:hover {
-  transition: 0.3s ease-in-out;
-  transform: scale(0.9);
+  transform: scale(0.96);
   background-color: rgb(131, 5, 249);
   color: white;
 }
@@ -79,8 +79,10 @@ label {
   border: none;
   height: 3em;
   margin-top: 1em;
+  transition: 0.3s ease-in-out;
   border-radius: 10px;
 }
 #btn:hover {
   background-color: rgb(135, 7, 255);
+  cursor: pointer;
 }
