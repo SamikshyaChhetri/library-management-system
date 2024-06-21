@@ -163,3 +163,7 @@ a {
   background-color: rgb(139, 31, 240);
   cursor: pointer;
 }
+.wrapBoth {
+  display: flex;
+  flex-direction: column;
+}

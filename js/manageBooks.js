@@ -8,6 +8,7 @@ const reservedBooks = async () => {
   const data = await response.json();
   //   console.log(data.data);
   const displayReservedBooks = document.getElementById("booksContainer");
+
   if (data.data.length === 0) {
     displayReservedBooks.innerHTML = "No books reserved";
   } else {
