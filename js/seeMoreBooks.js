@@ -14,10 +14,11 @@ const getData = async () => {
     <div class="bookCard" data-id=${a.id} > 
     <div class="wrapDetails">
     
-    <img src="../images/book.png!f305cw" alt="" class="book">
+    <img src="${a.attachment}" alt="" class="book">
     
     <div class="at">${a.title}</div>
     <div class="aa">${a.author}</div>
+    <div class="
     </div>
     <div class="ap">${a.pages} Pages</div>
     </div>
@@ -31,6 +32,10 @@ const getData = async () => {
   const titleName = document.getElementById("titleName");
   const authorName = document.getElementById("authorName");
   const availableBooks = document.getElementById("available");
+  const isbnNum = document.getElementById("isbnDiv");
+  const bookDescription = document.getElementById("paragraph");
+  const BookImage = document.getElementById("bookImgg");
+  BookImage.setAttribute("src", data.data.attachment);
 
   // Iterate through every book cards to add event listner
   display.forEach((item) => {
@@ -59,6 +64,8 @@ const getData = async () => {
       titleName.innerHTML = data.data.title;
       authorName.innerHTML = data.data.author;
       availableBooks.innerHTML = data.data.available + " " + "Available";
+      isbnNum.innerHTML = data.data.isbn;
+      bookDescription.innerHTML = data.data.description;
     });
   });
 

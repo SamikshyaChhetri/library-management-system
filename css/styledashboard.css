@@ -39,6 +39,13 @@ body {
   background-color: rgba(137, 43, 226, 0.782);
   right: 1em;
 }
+link[rel="icon"] {
+  /* CSS properties */
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .menu {
   padding: 10px 15px 10px 15px;
   transition: 0.3s ease-in-out;

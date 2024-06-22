@@ -42,7 +42,6 @@ span {
   padding-top: 30px;
 }
 .bookCard {
-  /* border: 1.5px solid rgba(0, 0, 0, 0.324); */
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
   width: 180px;
   border-radius: 10px;
@@ -180,7 +179,8 @@ a {
   border-radius: 10px;
 }
 .btitle,
-.atitle {
+.atitle,
+.isbnTitle {
   font-weight: bold;
   font-size: large;
 }
@@ -194,7 +194,8 @@ a {
   font-size: large;
 }
 .wrapTitle,
-.wrapAuthor {
+.wrapAuthor,
+.wrapisbn {
   display: flex;
   flex-direction: column;
   gap: 0.3em;

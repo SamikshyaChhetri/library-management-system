@@ -19,11 +19,15 @@ submitBooks.addEventListener("click", async (e) => {
   const authorName = document.getElementById("author").value;
   const bookPage = document.getElementById("page").value;
   const bookPrice = document.getElementById("price").value;
+  const isbn = document.getElementById("isbn").value;
+  const description = document.getElementById("bookDescription").value;
   const dataPass = {
     title: bookname,
     author: authorName,
     pages: Number(bookPage),
     price: Number(bookPrice),
+    isbn: Number(isbn),
+    BookDescription: description,
   };
   if (!bookname && !authorName && !bookPage && !bookPrice) {
     toast("Cannot add empty value ", "red");

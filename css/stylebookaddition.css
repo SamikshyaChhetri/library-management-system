@@ -27,7 +27,7 @@ form {
   flex-direction: column;
   gap: 5px;
   text-align: justify;
-  height: 50vh;
+  /* height: 50vh; */
 }
 a {
   text-decoration: none;
@@ -61,6 +61,7 @@ label {
   padding-bottom: 8px;
   font-size: 17px;
 }
+
 .head {
   text-align: center;
   font-size: 25px;
