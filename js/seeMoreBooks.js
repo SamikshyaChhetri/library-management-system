@@ -34,8 +34,6 @@ const getData = async () => {
   const availableBooks = document.getElementById("available");
   const isbnNum = document.getElementById("isbnDiv");
   const bookDescription = document.getElementById("paragraph");
-  const BookImage = document.getElementById("bookImgg");
-  BookImage.setAttribute("src", data.data.attachment);
 
   // Iterate through every book cards to add event listner
   display.forEach((item) => {
@@ -66,6 +64,8 @@ const getData = async () => {
       availableBooks.innerHTML = data.data.available + " " + "Available";
       isbnNum.innerHTML = data.data.isbn;
       bookDescription.innerHTML = data.data.description;
+      const BookImage = document.getElementById("bookImgg");
+      BookImage.setAttribute("src", data.data.attachment);
     });
   });
 
@@ -94,12 +94,18 @@ reserveBook.addEventListener("click", async () => {
     bookId: bookIdFromLocalstorage,
   };
 
+  const newForm = new FormData();
+
+  newForm.append("id", useridfromlocalstorage);
+  newForm.append("attachment", BookImage.file[0]);
+
   // send user id and book id to reserve the crresponding book by the user
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/reservations/",
     {
       method: "post",
       body: JSON.stringify(data_pass),
+      body: newForm,
       headers: {
         "Content-Type": "application/json",
       },
