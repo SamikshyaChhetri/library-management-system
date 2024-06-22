@@ -19,7 +19,7 @@ const getData = async () => {
     <div class="at">${a.title}</div>
     <div class="aa">${a.author}</div>
     </div>
-    <div class="ap">${a.pages}</div>
+    <div class="ap">${a.pages} Pages</div>
     </div>
     </div>   
     `;
