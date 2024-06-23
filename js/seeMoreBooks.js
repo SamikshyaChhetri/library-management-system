@@ -56,7 +56,6 @@ const getData = async () => {
         "https://lms.sachetsubedi001.com.np/api/books/" + bookID
       );
       const data = await response.json();
-
       console.log(data);
       // set the book details in the modal
       titleName.innerHTML = data.data.title;
