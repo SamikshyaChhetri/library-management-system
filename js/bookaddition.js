@@ -59,7 +59,7 @@ submitBooks.addEventListener("click", async (e) => {
       {
         method: "post",
         // body: JSON.stringify(dataPass),
-        body: newForm, // console ma error xa hera, mathi heraaaaa
+        body: newForm,
       }
     );
     const data = await response.json(); //check gara aba
