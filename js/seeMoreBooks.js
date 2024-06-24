@@ -14,7 +14,7 @@ const getData = async () => {
     <div class="bookCard" data-id=${a.id} > 
     <div class="wrapDetails">
     
-    <img src="${a.attachment}" alt="" class="book">
+    <img src="${a.attachment}" alt="" class="book">     
     
     <div class="at">${a.title}</div>
     <div class="aa">${a.author}</div>
@@ -93,18 +93,12 @@ reserveBook.addEventListener("click", async () => {
     bookId: bookIdFromLocalstorage,
   };
 
-  const newForm = new FormData();
-
-  newForm.append("id", useridfromlocalstorage);
-  newForm.append("attachment", BookImage.file[0]);
-
   // send user id and book id to reserve the crresponding book by the user
   const response = await fetch(
     "https://lms.sachetsubedi001.com.np/api/reservations/",
     {
       method: "post",
       body: JSON.stringify(data_pass),
-      body: newForm,
       headers: {
         "Content-Type": "application/json",
       },

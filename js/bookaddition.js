@@ -15,21 +15,14 @@ function removetoast() {
 const submitBooks = document.getElementById("btn");
 submitBooks.addEventListener("click", async (e) => {
   e.preventDefault();
-  const bookname = document.getElementById("bookTitle").value;
-  const authorName = document.getElementById("author").value;
-  const bookPage = document.getElementById("page").value;
-  const bookPrice = document.getElementById("price").value;
+  const bookname = document.getElementById("bookTitle").value; //Get the title
+  const authorName = document.getElementById("author").value; //Get the author
+  const bookPage = document.getElementById("page").value; //Get the pages
+  const bookAvailable = document.getElementById("price").value; //Get the available
   const isbn = document.getElementById("isbn").value;
   const description = document.getElementById("bookDescription").value;
-  const dataPass = {
-    title: bookname,
-    author: authorName,
-    pages: Number(bookPage),
-    price: Number(bookPrice),
-    isbn: Number(isbn),
-    BookDescription: description,
-  };
-  if (!bookname && !authorName && !bookPage && !bookPrice) {
+  const bookImages = document.getElementById("bookImgg");
+  if (!bookname && !authorName && !bookPage && !bookAvailable) {
     toast("Cannot add empty value ", "red");
 
     removetoast();
@@ -46,23 +39,30 @@ submitBooks.addEventListener("click", async (e) => {
     const bkpage = document.getElementById("page");
     bkpage.style.border = "1.2px solid red";
   }
-  if (!bookPrice) {
+  if (!bookAvailable) {
     const bkprice = document.getElementById("price");
     bkprice.style.border = "1.2px solid red";
   } else {
-    console.log(typeof Number(bookPage));
+    // Initialize a new form data
+    const newForm = new FormData();
+    // Append the values to the form
+    newForm.append("attachment", bookImages.files[0]);
+    newForm.append("title", bookname);
+    newForm.append("author", authorName);
+    newForm.append("pages", bookPage);
+    newForm.append("available", bookAvailable);
+    newForm.append("isbn", isbn);
+    newForm.append("description", description);
     submitBooks.innerHTML = "Submitting";
     const response = await fetch(
       "https://lms.sachetsubedi001.com.np/api/books",
       {
         method: "post",
-        body: JSON.stringify(dataPass),
-        headers: {
-          "Content-Type": "application/json",
-        },
+        // body: JSON.stringify(dataPass),
+        body: newForm, // console ma error xa hera, mathi heraaaaa
       }
     );
-    const data = await response.json();
+    const data = await response.json(); //check gara aba
 
     submitBooks.innerHTML = "Submit";
     if (response.status == 201) {
