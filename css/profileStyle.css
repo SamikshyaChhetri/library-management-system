@@ -88,21 +88,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.userProfile {
-  text-align: center;
+.container {
   background-image: linear-gradient(white, white);
   border-radius: 10px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
   width: 60%;
-
   height: 60vh;
-  padding-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8em;
 }
+
 img {
   border-radius: 50%;
-  height: 150px;
+  height: 170px;
+  border: 8px solid white;
 }
 .pfp {
   color: white;
@@ -110,7 +111,19 @@ img {
   position: absolute;
   cursor: pointer;
   padding: 1px 4px;
-  /* transition: 0.2s ease-in-out; */
   right: 36em;
   top: 50px;
+}
+.userName {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 35px;
+  color: rgba(0, 0, 0, 0.751);
+}
+.userID,
+.email {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.523);
+  padding-top: 4px;
 }

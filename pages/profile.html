@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your profile</title>
     <link rel="stylesheet" href="../css/profileStyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="userProfile">
-      <div class="pfp">
-        <img src="../images/dorr.jpg" alt="" />
+    <div class="container" data-aos="fade-left" data-aos-duration="3300">
+      <div class="userProfile">
+        <div class="pfp" data-aos="fade-up" data-aos-duration="3300">
+          <img src="../images/dorr.jpg" alt="" />
+        </div>
       </div>
-      <div class="userName">User-Name</div>
-      <div class="userID">User-Id</div>
+      <div class="info">
+        <div class="userName">User-Name</div>
+        <div class="userID">User-ID</div>
+        <div class="email">Email-ID</div>
+      </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
