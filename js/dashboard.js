@@ -85,7 +85,7 @@ const getData = async () => {
 getData();
 const tokenFromLocalstorage = localStorage.getItem("token");
 if (!tokenFromLocalstorage) {
-  window.location.href = "../pages/login.html";
+  window.location.href = "../index.html";
 }
 async function fetchData() {
   useridfromlocalstorage = localStorage.getItem("userid");
