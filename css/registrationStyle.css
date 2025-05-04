@@ -96,25 +96,3 @@ button:hover {
   border-bottom: 1px solid black;
   padding: 0.5em;
 }
-.fb {
-  text-align: center;
-  background-color: #1877f2;
-  padding: 8px 0px;
-  color: white;
-  margin-top: 1em;
-}
-.fb:hover {
-  background-color: #0060de;
-  cursor: pointer;
-}
-.google {
-  text-align: center;
-  padding: 8px 0px;
-  color: rgb(0, 0, 0);
-  border: 1px solid black;
-  margin-top: 1em;
-}
-.google:hover {
-  background-color: whitesmoke;
-  cursor: pointer;
-}
